@@ -1,0 +1,89 @@
+/* Message from CEO ---------- */
+#moreMessage {
+  display: none;
+}
+
+.text-justify {
+  text-align: justify;
+  text-justify: auto;
+}
+
+p.text-justify strong {
+  font-weight: bold;
+}
+p span.text-right {
+  text-align: right;
+}
+
+span.additional-subtitle.light-text.span-see-more {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Our Team Section ---------- */
+
+.feature-item {
+  height: 430px;
+  border: none;
+}
+
+.profile_photo {
+  /* border-radius: 5px; */
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.feature-item {
+  padding: 0;
+}
+
+.profile-card {
+  background-color: transparent;
+  /* width: 300px; */
+  height: 430px;
+  perspective: 1000px;
+  -webkit-perspective: 1000;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    height: 480px;
+  }
+  .pulak-profile-card {
+    height: 554px;
+  }
+}
+
+.profile-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.profile-card:hover .profile-card-inner {
+  transform: rotateY(180deg);
+}
+
+.profile-card-front,
+.profile-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+}
+.profile-card-front {
+  z-index: 2;
+}
+
+.profile-card-back {
+  transform: rotateY(180deg);
+  line-height: 2;
+}
+
+.profile-card-back p {
+  margin: 1.5rem 0;
+}

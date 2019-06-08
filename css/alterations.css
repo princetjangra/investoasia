@@ -1,0 +1,199 @@
+.headline p.grey-text {
+  color: #bbb;
+  font-size: 1.5rem;
+  font-style: initial;
+}
+
+.align-center {
+  vertical-align: middle;
+}
+
+.align-top {
+  vertical-align: top;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Spacing */
+
+/* .iframe-about {
+  margin-top: 5rem;
+} */
+
+/* Features */
+.feature-headline {
+  width: 462px;
+}
+
+@media only screen and (max-width: 768px) {
+  .feature-headline {
+    width: 317px;
+  }
+}
+
+.feature-item {
+  border: 2px solid #272f7c;
+  height: 350px;
+}
+
+/* Comparison table */
+/* 
+- make mobile switch sticky
+*/
+.comparison-heading {
+  font: bold 1.75em Poppins;
+  color: #ffaca3;
+  line-height: 1.2;
+}
+
+article {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* height: 1000px; */
+  position: relative;
+}
+ul {
+  display: flex;
+  top: 0px;
+  z-index: 10;
+  padding-bottom: 14px;
+}
+li {
+  list-style: none;
+  flex: 1;
+}
+li:last-child {
+  border-right: 1px solid #ddd;
+}
+button {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-right: 0;
+  border-top: 0;
+  padding: 10px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  height: 60px;
+  color: #999;
+}
+li.active button {
+  background: #f5f5f5;
+  color: #000;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+th {
+  background: #f5f5f5;
+  display: none;
+}
+td,
+th {
+  height: 53px;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  empty-cells: show;
+}
+td,
+th {
+  text-align: left;
+}
+td + td,
+th + th {
+  text-align: center;
+  /* display: none; */
+}
+td.default {
+  display: table-cell;
+}
+.bg-purple {
+  border-top: 3px solid #ffaca3;
+  /* font-weight: bold; */
+}
+.default-tick-line {
+  background-color: #ddd;
+}
+.bg-blue {
+  border-top: 3px solid #242d70;
+  font-weight: bold;
+  /* 272f7c */
+}
+.sep {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+.txt-l {
+  font-size: 28px;
+  font-weight: bold;
+}
+.txt-top {
+  position: relative;
+  top: -9px;
+  left: -2px;
+}
+.tick {
+  font-size: 18px;
+  color: #2ca01c;
+}
+.tick-red {
+  color: crimson;
+}
+.hide {
+  border: 0;
+  background: none;
+}
+
+@media (min-width: 640px) {
+  ul {
+    display: none;
+  }
+  td,
+  th {
+    display: table-cell !important;
+  }
+  td,
+  th {
+    width: 330px;
+  }
+  td + td,
+  th + th {
+    width: auto;
+  }
+}
+
+table td,
+span {
+  vertical-align: middle;
+}
+
+.blockquote-item {
+  /* display: none; */
+  /* transition: 0.5s ease; */
+}
+
+.blockquote-content {
+  position: relative;
+  height: 400px;
+}
+
+.blockquote-content > blockquote {
+  position: absolute;
+  top: 10px;
+  /* left: 10px; */
+  /* right: 10px; */
+  bottom: 10px;
+}
+
+/* Plateform Page ---------- */
+.asia-map-container {
+  background-color: #272f7c;
+}
