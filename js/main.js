@@ -41,7 +41,7 @@ function seeMoreMessage(e) {
 
 // -------- Message form CEO
 
-// Map functioning ---------
+// Show coin on hovering over map ---------
 
 var india_hb = $(".india-hover-box");
 var singapore_hb = $(".singapore-hover-box");
@@ -140,5 +140,3 @@ pak_hb.hover(() => {
   pak_hb.toggleClass("map-hover");
   pakSvg.children().toggleClass("svg-map-hover");
 });
-
-// --------- Map functioning
