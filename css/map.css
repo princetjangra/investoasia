@@ -1,6 +1,5 @@
-#indonesia:hover > path {
-  color: lightblue;
-  fill: lightblue;
+a:hover {
+  text-decoration: none;
 }
 
 path {
