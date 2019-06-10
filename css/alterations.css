@@ -68,7 +68,7 @@ li {
 li:last-child {
   border-right: 1px solid #ddd;
 }
-button {
+.my-5 button {
   width: 100%;
   border: 1px solid #ddd;
   border-right: 0;

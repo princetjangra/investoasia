@@ -1,15 +1,55 @@
+.coin-image img {
+  height: auto;
+  width: 50%;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.coin-content {
+  background-color: #535b620e;
+  margin-top: 40px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+}
+
+.coin-about {
+  margin-left: -9%;
+}
+.coin-about h6 {
+  display: inline-block;
+  background-color: rgba(129, 135, 140, 0.1);
+  color: #535b62;
+  padding: 1px 6px;
+  border-radius: 5px;
+}
+.current-value {
+  /* margin-left: 5%; */
+  transform: translate(90%, 0);
+}
+
+.current-value h3 {
+  font-size: 20px;
+  color: rgba(25, 175, 85, 0.555);
+}
 /* Style the tab */
 .stock-invest {
   font-family: Arial;
 }
-.tab {
+
+.stock-invest,
+.graph {
+  margin-left: 15%;
+  padding-top: 30px;
+}
+.graph .tab {
   overflow: hidden;
   border-bottom: 1px solid rgba(0, 0, 0, 0.075);
   width: 70%;
 }
 
 /* Style the buttons inside the tab */
-.tab button {
+.graph .tab button {
   background-color: inherit;
   float: left;
   border: none;
@@ -21,18 +61,20 @@
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.graph .tab button:hover {
   color: #3a49c9;
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.graph .tab button.active {
   color: #3a49c9;
 }
 
 /* Style the tab content */
-.tabcontent {
+.graph .tabcontent {
   display: none;
   padding: 6px 12px;
   border-top: none;
+  width: 65%;
+  height: 50%;
 }
