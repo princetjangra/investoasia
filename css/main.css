@@ -35,7 +35,7 @@
 /* Template Backgrounds Start */
 /* ------------------------------------------------*/
 .fullscreen-background {
-  background-image: url("../img/backgrounds/bg-main-fullscreen-1.jpg");
+  background-image: url("../resources/index-bg.jpg");
 }
 
 .fullscreen-background-2 {
@@ -282,7 +282,7 @@ section {
 }
 
 .bg-dark {
-  background-color: #272F7C;
+  background-color: #272F7C !important;
 }
 
 .sundown {
@@ -598,6 +598,7 @@ blockquote cite span {
   position: relative;
   display: inline-block;
   border: none;
+  border-radius: 0 !important;
   outline: none;
   font: inherit;
   background-color: transparent;
@@ -1001,7 +1002,7 @@ blockquote cite span {
 }
 
 .logo img {
-  width: auto;
+  width: 100px;
   margin: 0 auto;
 }
 
@@ -1666,7 +1667,7 @@ blockquote cite span {
 }
 
 .navigation_content .logo-wrapper img {
-  width: auto;
+  width: 100px;
   margin: 0 auto;
 }
 

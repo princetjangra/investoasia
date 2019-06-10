@@ -46,10 +46,14 @@ span.additional-subtitle.light-text.span-see-more {
 
 @media only screen and (max-width: 768px) {
   .profile-card {
-    height: 480px;
+    height: 542px;
   }
   .pulak-profile-card {
     height: 554px;
+  }
+
+  .profile-card-back {
+    line-height: 2;
   }
 }
 
@@ -81,7 +85,7 @@ span.additional-subtitle.light-text.span-see-more {
 
 .profile-card-back {
   transform: rotateY(180deg);
-  line-height: 2;
+  /* line-height: 1; */
 }
 
 .profile-card-back p {
