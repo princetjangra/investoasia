@@ -1686,7 +1686,7 @@ blockquote cite span {
     padding: 3rem 0;
   }
   .navigation_content .menu-wrapper {
-    padding: 7rem 0;
+    /* padding: 7rem 0; */
   }
 }
 
