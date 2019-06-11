@@ -1,4 +1,5 @@
 // coin1-6M js start
+
 window.chartColors = {
   red: "rgb(255, 99, 132)",
   orange: "rgb(255, 159, 64)",
@@ -78,9 +79,12 @@ var config = {
 }
 
 var ctx = document.getElementById("canvas1").getContext("2d")
-// ctx.canvas.width = 30
-// ctx.canvas.height = 20
-var myLine = new Chart(ctx, config)
+var lineChart = new Chart(ctx, {
+  type: "line",
+  data: config.data,
+  options: config.options
+})
+
 // coin1-6M js end
 
 //coin1-1Y js start
@@ -197,7 +201,11 @@ var config = {
 }
 
 var ctx = document.getElementById("canvas2").getContext("2d")
-var myLine = new Chart(ctx, config)
+var lineChart = new Chart(ctx, {
+  type: "line",
+  data: config.data,
+  options: config.options
+})
 
 //coin1-1Y js end
 
@@ -293,7 +301,11 @@ var config = {
 }
 
 var ctx = document.getElementById("canvas3").getContext("2d")
-var myLine = new Chart(ctx, config)
+var lineChart = new Chart(ctx, {
+  type: "line",
+  data: config.data,
+  options: config.options
+})
 //coin1-3Y js end
 
 //coin1-MAX js start
@@ -406,7 +418,11 @@ var config = {
 }
 
 var ctx = document.getElementById("canvas4").getContext("2d")
-var myLine = new Chart(ctx, config)
+var lineChart = new Chart(ctx, {
+  type: "line",
+  data: config.data,
+  options: config.options
+})
 //coin1-MAX js end
 
 // graph js start

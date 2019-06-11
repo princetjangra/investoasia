@@ -215,63 +215,7 @@
     <!-- Navigation End-->
 
     <!-- Fullpage.js Sections Start-->
-    <div id="fullpage-scroll">
-
-      <!-- Main Section Start-->
-      <div class="section fp-auto-height-responsive main-section" data-anchor="main">
-
-        <!-- Main Section Background Start-->
-        <div class="main-section_background fullscreen-background">
-
-          <!-- Color Layer Start -->
-          <div class="layer-blue"></div>
-          <!-- Color Layer End -->
-
-          <!-- Bottom Morphing Shape Start -->
-          <div class="bottom-shape-holder">
-            <svg viewBox="0 0 800 200" style="enable-background:new 0 0 800 200;" preserveAspectRatio="none">
-               <path id="bottom-path" class="midnightblue" d="M0,200c0,0,9.5-25.5,35.5-23.5s31,18,62,16s58-33,115-32s90,33,166,24s99-80,172-85s89,52,136,59
-            	S796,129,800,100c0,54,0,100,0,100H0z"/>
-            </svg>
-          </div>
-          <!-- Bottom Morphing Shape End -->
-
-        </div>
-        <!-- Main Section Background End-->
-
-        <!-- Logo Start -->
-        <div class="logo">
-          <!-- Your Logo Here -->
-          <!-- <img src="img/punchy-logo.svg" alt="Punchy"> -->
-          <h2 class="text-center align-center">InvestoAsia</h2>
-        </div>
-        <!-- Logo End -->
-
-       
-
-        <!-- Socials Start -->
-        <div class="socials fullscreen">
-          <ul>
-            <li>
-              <a class="" href="https://twitter.com/" target="_blank">
-                <i class="icon ion-social-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a class="" href="https://github.com/" target="_blank">
-                <i class="icon ion-social-github"></i>
-              </a>
-            </li>
-            <li>
-              <a class="" href="https://www.facebook.com/" target="_blank">
-                <i class="icon ion-social-facebook"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- Socials End -->
-
-      </div>
+    
       <!-- Main Section End-->
 
      
@@ -307,7 +251,10 @@
          <!-- Stock Invest Section Start -->
 
          <section class="stock-invest">
-            <h3>Why Should you invest in this fund?</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 stock-query">
+                  <h3>Why Should you invest in this fund?</h3>
             <p>
               An ETF investment that gives you a diversified reach, The CIMB FTSE
               ASEAN 40 allows you to take part in over 40 blue chip companies from
@@ -318,6 +265,16 @@
               economic powers with less equity risk asset risk. This ETF is especially
               suited to those who want to expand and diversify their ETF.
             </p>
+                </div>
+                <div class="col-md-4 min-invest">
+                  <h5>Min investment Amount</h5>
+                  <p>&#8377 1000</p>
+                  <button >
+                    ➕ &#8377 1000
+                  </button>
+                </div>
+              </div>
+            </div>
           </section>
 
          <!-- Stock Invest Section End -->
@@ -347,27 +304,27 @@
         
               <div id="Coin1-6M" class="tabcontent">
                 <h3>6 Months</h3>
-                <div>
-                  <canvas id="canvas1"></canvas>
+                <div class="setChart" >
+                  <canvas id="canvas1" height="500" width="600"></canvas>
                 </div>
               </div>
         
               <div id="Coin1-1Y" class="tabcontent">
                 <h3>1 Year</h3>
-                <div>
-                  <canvas id="canvas2"></canvas>
+                <div class="setChart">
+                  <canvas id="canvas2" height="500" width="600"></canvas>
                 </div>
               </div>
               <div id="Coin1-3Y" class="tabcontent">
                 <h3>3 Years</h3>
-                <div>
-                  <canvas id="canvas3"></canvas>
+                <div class="setChart">
+                  <canvas id="canvas3" height="500" width="600"></canvas>
                 </div>
               </div>
               <div id="Coin1-MAX" class="tabcontent">
                 <h3>MAX</h3>
-                <div>
-                  <canvas id="canvas4"></canvas>
+                <div class="setChart">
+                  <canvas id="canvas4" height="500" width="600"></canvas>
                 </div>
               </div>
             </section>
