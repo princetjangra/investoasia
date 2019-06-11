@@ -268,9 +268,9 @@
                 </div>
                 <div class="col-md-4 min-invest">
                   <h5>Min investment Amount</h5>
-                  <p>&#8377 1000</p>
+                  <p>&#8377; 1000</p>
                   <button >
-                    ➕ &#8377 1000
+                    + &#8377; 1000
                   </button>
                 </div>
               </div>
@@ -283,9 +283,10 @@
           <!-- Graph Section Start -->
 
           <section class="graph">
+            <div class="container">
               <div class="tab">
                 <button
-                  class="tablinks"
+                  class="tablinks left-radius"
                   onclick="openGraph(event, 'Coin1-6M')"
                   id="defaultOpen"
                 >
@@ -297,7 +298,7 @@
                 <button class="tablinks" onclick="openGraph(event, 'Coin1-3Y')">
                   3 Years
                 </button>
-                <button class="tablinks" onclick="openGraph(event, 'Coin1-MAX')">
+                <button class="tablinks right-radius" onclick="openGraph(event, 'Coin1-MAX')">
                   MAX
                 </button>
               </div>
@@ -327,6 +328,7 @@
                   <canvas id="canvas4" height="500" width="600"></canvas>
                 </div>
               </div>
+            </div>
             </section>
           <!-- Graph Section End -->
 
