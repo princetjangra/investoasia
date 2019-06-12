@@ -1,3 +1,8 @@
+/* fills grey color till the end of morphing path */
+.menu-morphing-path {
+  fill: #f2e9e9;
+}
+
 .headline p.grey-text {
   color: #bbb;
   font-size: 1.5rem;

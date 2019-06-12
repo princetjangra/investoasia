@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Light Bootstrap Dashboard - v1.4.0
+ * Light Bootstrap Overview - v1.4.0
  =========================================================
 
  * Product Page: http://www.creative-tim.com/product/light-bootstrap-dashboard
