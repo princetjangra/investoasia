@@ -24,7 +24,7 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href=" css/demo.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/holdings.css" />
+    <link rel="stylesheet" href="css/holdings.css" />
 
     <!--     Fonts and icons     -->
     <link
@@ -158,12 +158,73 @@
         <section class="holdings">
           <div class="container">
             <div class="row">
-              <div class="col-md-6 head-tag">
+              <div class="col-md-6 headTag">
                 <h3>Holdings (100 <b>Tokens</b> worth <b>&#36;400</b>)</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Reiciendis rem velit quae voluptatibus minima optio ea
+                  excepturi debitis quod, pariatur praesentium at sunt dolor!
+                  Aliquid deserunt tenetur eaque repellat ex repellendus,
+                  debitis dolorum ducimus voluptate quam. Soluta ut atque
+                  tempore!
+                </p>
+              </div>
+              <div class="col-md-6 btns">
+                <div class="col-md-4 buy">
+                  <button class="btn btn-success">BUY</button>
+                </div>
+                <div class="col-md-4 sell">
+                  <button class="btn btn-warning" onclick="openButton()">
+                    SELL
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
+
+        <div id="sell" class="tabcontent">
+          <div class="row">
+            <div class="col-md-4 ">
+              <h3>Payment Method</h3>
+            </div>
+            <!-- <div class="col-md-6">
+              <select class="payment-dropdown">
+                <option value="xyz">xyz</option>
+                <option value="abc">abc</option>
+                <option value="jkl">jkl</option>
+                <option value="pqr">pqr</option>
+                <option value="stu">stu</option>
+                <option value="mno">mno</option>
+              </select>
+            </div> -->
+            <div class="input-group mb-3 col-md-4">
+              <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="input-group-append">
+                <label class="input-group-text" for="inputGroupSelect02"
+                  >Options</label
+                >
+              </div>
+            </div>
+            <div class="cancel col-md-4">
+              <img src="img/cancel.png" height="50" width="50" />
+            </div>
+          </div>
+          <div class="btn-content">
+            <button class="btn btn-danger">Proceed</button>
+            <br />
+            <br />
+            <p>
+              <img src="img/checked.png" height="40" width="40" /> The amount
+              will be deposited in your wallet shortly
+            </p>
+          </div>
+        </div>
 
         <footer class="footer">
           <div class="container-fluid">
@@ -201,4 +262,5 @@
 
   <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
   <script src=" js/demo.js"></script>
+  <script src="js/holdings.js"></script>
 </html>

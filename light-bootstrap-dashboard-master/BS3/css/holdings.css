@@ -1,0 +1,73 @@
+.holdings .headTag h3 {
+  font-size: 25px;
+}
+.holdings .headTag h3 b:nth-child(1) {
+  color: limegreen;
+}
+
+.holdings .headTag h3 b:nth-child(2) {
+  color: rgba(226, 195, 17, 0.849);
+}
+
+.holdings .headTag p {
+  padding: 30px 50px;
+  font-size: 17px;
+  border-radius: 5px 50px 5px 50px;
+  background-color: rgba(216, 191, 216, 0.767);
+}
+
+.btn-success:hover {
+  background-color: seagreen;
+  color: white;
+}
+
+.btn-warning:hover {
+  color: white;
+  background-color: darkorange;
+}
+
+.btn-danger:hover {
+  color: white;
+  background-color: crimson;
+}
+
+.tabcontent {
+  /* display: none; */
+  padding: 30px 50px;
+  border-radius: 50px 10px 50px 10px;
+  margin: 10px 250px;
+  background-color: rgba(216, 191, 216, 0.767);
+}
+
+.tabcontent .btn-content {
+  padding-top: 100px;
+  text-align: center;
+}
+.tabcontent .btn-content p {
+  font-size: 20px;
+  color: limegreen;
+  border-radius: 10px;
+}
+
+.btns {
+  height: 275px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-dropdown {
+  font-size: 20px;
+  width: 70%;
+  border: none;
+  border-radius: 7px;
+  color: cornflowerblue;
+  padding: 5px 20px;
+  transition: 0.3s;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
