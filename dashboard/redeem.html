@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>InvestoAsia - Start A Plan</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/smallpages.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">InvestoAsia</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link" href="#">Features</a>
+          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" href="#">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container pb-3">
+      <div id="sell" class="payment-container mx-auto">
+        <div class="tabcontent ">
+          <!-- <div class="row justify-content-center"> -->
+          <!-- <div class=" "> -->
+          <h3 class="col-12 text-center display-4 mb-4">Payment Method</h3>
+          <!-- </div> -->
+
+          <div class="form-group text-center mx-auto mb-3 col-md-6">
+            <label for="no-of-tokens-to-redeem">
+              Enter number of tokens to redeem:
+            </label>
+            <input
+              type="number"
+              id="no-of-token-to-redeem"
+              class="form-control"
+            />
+          </div>
+          <div class="amount-converted mx-auto w-100 text-center form-group">
+            Amount Converted: <span>16.00</span>
+          </div>
+          <div
+            class="form-group row text-center mx-auto input-group mb-3 col-md-6"
+          >
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Choose...</option>
+              <option value="BTC">BTC</option>
+              <option value="ETH">ETH</option>
+              <option value="USD">USD</option>
+              <option value="Wons">Wons</option>
+            </select>
+            <div class="input-group-append">
+              <label class="input-group-text" for="inputGroupSelect02"
+                >Currency</label
+              >
+            </div>
+          </div>
+          <!-- </div> -->
+
+          <div class="btn-content">
+            <button class="btn btn-danger">Proceed</button>
+            <br />
+            <br />
+            <p>
+              <img src="img/checked.png" height="40" width="40" /> The amount
+              will be deposited in your wallet shortly
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/25f8178609.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
