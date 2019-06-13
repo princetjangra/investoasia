@@ -1,3 +1,6 @@
+.bg-seagreen {
+}
+
 .holdings .headTag h3 {
   font-size: 25px;
 }
@@ -32,21 +35,22 @@
 }
 
 .tabcontent {
-  /* display: none; */
-  padding: 30px 50px;
-  border-radius: 50px 10px 50px 10px;
-  margin: 10px 250px;
+  height: 80%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  padding: 30px 30px;
+  border-radius: 10px;
   background-color: rgba(216, 191, 216, 0.767);
 }
 
 .tabcontent .btn-content {
-  padding-top: 100px;
+  padding-top: 200px;
   text-align: center;
 }
 .tabcontent .btn-content p {
   font-size: 20px;
   color: limegreen;
-  border-radius: 10px;
 }
 
 .btns {
@@ -55,19 +59,53 @@
   justify-content: center;
   align-items: center;
 }
-
-.payment-dropdown {
-  font-size: 20px;
-  width: 70%;
-  border: none;
-  border-radius: 7px;
-  color: cornflowerblue;
-  padding: 5px 20px;
-  transition: 0.3s;
+.input-group-append {
+  height: 38px;
 }
 
 .footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 600px) {
+  .tabcontent {
+    height: 10%;
+    width: 60%;
+    margin-top: 5%;
+    padding: 10px 8px;
+    border-radius: 10px;
+    background-color: rgba(216, 191, 216, 0.767);
+  }
+  .tabcontent h3 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 10px;
+  }
+  .tabcontent .btn-content {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .tabcontent .btn-content p {
+    font-size: 14px;
+    font-weight: 500;
+    color: limegreen;
+  }
+  .btn {
+    padding: 2px 8px;
+    font-size: 13;
+  }
+  .btn-content img {
+    height: 25px;
+    width: 25px;
+  }
+  .custom-select {
+    font-size: 11px;
+  }
+
+  .input-group-append {
+    font-size: 11px;
+    height: 30px;
+  }
 }
