@@ -477,7 +477,7 @@ button:focus,
       font-size: 2.7rem;
       padding-right: 120px; }
     .main-header .header-left-side p {
-      font-size: 0.8rem;
+      /* font-size: 0.8rem; */
       margin: 1rem 0 3rem;
       max-width: 70%; }
   .main-header .header-right-side {
@@ -519,7 +519,8 @@ button:focus,
         top: 2.5rem;
         opacity: 0.3; }
     .main-header-sub .single-about-container .row p {
-      font-size: 0.7em; }
+      /* font-size: 0.7em;  */
+    }
     .main-header-sub .single-about-container .row .dark-blue-gradient-bg {
       border-radius: 10px 0 10px 0;
       position: absolute;
@@ -926,7 +927,7 @@ button:focus,
     background: -webkit-linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6));
     background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.6)); }
   .main-team .team-container-sub {
-    padding: 4rem 2rem 2rem;
+    padding: 2.5rem 2rem 2rem;
     box-shadow: 0 0 127px -33px rgba(0, 0, 0, 0.23);
     border: 1px solid #E1E1E1;
     border-radius: 15px;
@@ -955,7 +956,7 @@ button:focus,
         -webkit-transform: translate3d(0, -50%, 0);
                 transform: translate3d(0, -50%, 0); } */
     .main-team .team-container-sub .description {
-      font-size: 0.75rem;
+      /* font-size: 0.75rem; */
       line-height: 1.5; }
     .main-team .team-container-sub img {
       position: absolute;
@@ -1579,7 +1580,7 @@ button:focus,
   }
 
   .w3-container ul {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 
   .w3-container ul b {
