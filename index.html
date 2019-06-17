@@ -21,6 +21,9 @@
     <!-- Our Min CSS -->
     <link rel="stylesheet" href="./css/styles-1-light.css">
 
+    <!-- Alterations in template are in this CSS file -->
+    <link rel="stylesheet" href="./css/alterations.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,7 +40,7 @@
     <nav class="navbar fixed-top navbar-expand-lg main-navbar navbar-light">
         <div class="overlay"></div>
         <div class="container">
-            <a class="navbar-brand" data-scroll-nav="1" href="#">
+            <a class="navbar-brand" href="#">
                 <img class="img-fluid" src="images/icons/logo-small.png" alt="Website Logo">
             </a>
             <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -53,19 +56,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item nav-link-scroll waves-effect">
-                        <a class="nav-link active" data-scroll-nav="1" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item nav-link-scroll waves-effect">
                         <a class="nav-link" href="aboutus.html">About us</a>
                     </li>
                     <li class="nav-item nav-link-scroll waves-effect">
-                        <a class="nav-link" data-scroll-nav="5" href="#">Dashboard</a>
+                        <a class="nav-link" href="#">Dashboard</a>
                     </li>
                     <li class="nav-item nav-link-scroll waves-effect">
-                        <a class="nav-link" data-scroll-nav="6" href="#">Platform</a>
+                        <a class="nav-link" href="#">Platform</a>
                     </li>
                     <li class="nav-item nav-link-scroll waves-effect">
-                        <a class="nav-link" data-scroll-nav="7" href="#">Contact Us</a>
+                        <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle waves-effect"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -582,7 +585,7 @@
     </div>
     <!-- End Team Section-->
 
-    <!-- Start Download Section-->
+    <!-- Start Comparison Table Section-->
     <div class="main-download main-section" data-scroll-index="8">
         <div class="container">
             <h3 class="section-title">
@@ -593,7 +596,7 @@
             </h3>
             
             <div class="w3-container">
-                   <div class="container">
+                <div class="container">
                   
                   <div class="w3-bar w3-black" id="w3-bar">
                     <button class="w3-bar-item w3-button" onclick="openCity('London')">Prerequisites Needed</button>
@@ -605,7 +608,7 @@
                     <h4>Prerequisites Needed</h4>
                     <div class="row">
                      <div class="col-md-6">
-                         <ul><b>Traditional</b>
+                         <ul><b class="text-transparent main-gradient-bg">Traditional</b>
                              <li>PAN card of India</li>
                              <li>Trading Account</li>
                              <li>Designated Depository Account</li>
@@ -616,7 +619,7 @@
                          </ul>
                      </div>
                      <div class="col-md-6">
-                         <ul><b>InvestoAsia</b>
+                         <ul><b class="text-transparent main-gradient-bg">InvestoAsia</b>
                              <li>Digital KYC AML only</li>
                          </ul>
                      </div>
@@ -628,7 +631,7 @@
                     <h4>Fees Comparison</h4>
                     <div class="row">
                         <div class="col-md-6">
-                            <ul><b>Traditional</b>
+                            <ul><b class="text-transparent main-gradient-bg">Traditional</b>
                                    <li>Brokerage fees</li> 
                                   <li>Trading fees</li>  
                                   <li>Other platform directed fees</li>  
@@ -636,7 +639,7 @@
                             </ul>
                         </div>
                         <div class="col-md-6">
-                                <ul><b>InvestoAsia</b>
+                                <ul><b class="text-transparent main-gradient-bg">InvestoAsia</b>
                                        <li>Management Fees Only</li>   
                                 </ul>
                             </div>
@@ -647,21 +650,23 @@
                     <h4>Time Needed</h4>
                     <div class="row">
                         <div class="col-md-6">
-                            <ul><b>Traditional</b>
+                            <ul><b class="text-transparent main-gradient-bg">Traditional</b>
                                 <li>1-3 Months</li>
                             </ul>
                         </div>
                         <div class="col-md-6">
-                            <ul><b>InvestoAsia</b>
+                            <ul><b class="text-transparent main-gradient-bg">InvestoAsia</b>
                                 <li>2-3 Minutes</li>
                             </ul>
                         </div>
                     </div>
                   </div>
+
                 </div>  
+            </div>
         </div>
     </div>
-    <!-- End Download Section-->
+    <!-- End Comparison Table Section-->
 
     <!-- Start News Section-->
     <div class="main-news main-section" data-scroll-index="9">
@@ -802,12 +807,12 @@
                         <div class="card single-faq-container">
                             <div class="card-header" id="headingOne">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link waves-effect waves-button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <button class="btn btn-link waves-effect waves-button collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                             What’s the origin story behind this idea? How did you come up with this idea?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                                 <div class="card-body">
                                         The idea took shape out of the problem statement that arrived when one a friend of mine, Joon came from Korea to India. He was an avid investor and was really impressed by the returns of the Indian equity market and wanted to invest there. I have been investing since the age of 18 and hence was curious and wanted to find a solution. I did some research and came up with a few solutions that were traditional and heavily bureaucratic like FPI (Foreign Portfolio Investor), QFI (Qualified Foreign Investors), Depository Receipts, but in a hindsight all of them required loads of money, time and have different market operating hours. I needed a technology that could bridge the gap between money and investment opportunities globally. A few months later, solution came in the form of blockchain technology, which could help in digitising the assets and make untradable tradable globally.
                                 </div>
@@ -860,12 +865,12 @@
                         <div class="card single-faq-container">
                             <div class="card-header" id="headingFive">
                                 <h5 class="mb-0">
-                                    <button class="btn btn-link waves-effect waves-button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                    <button class="btn btn-link waves-effect waves-button collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                             Can I invest without having PAN card or any account of the country I want to invest in?
                                     </button>
                                 </h5>
                             </div>
-                            <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion2">
+                            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion2">
                                 <div class="card-body">
                                         Yes, definitely. All you need to go through is a simple 5 step KYC  process that takes about 2-3 minutes which doesn’t need any PAN card or trading account number.
                                 </div>

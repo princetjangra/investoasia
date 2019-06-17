@@ -427,3 +427,18 @@ function openCity(cityName) {
 }
 
 // comparison table end
+
+
+//  --------------------------
+//     About Us Page Start
+//  --------------------------
+
+// Message from CEO ----------
+
+function seeMoreMessage(e) {
+  var moreMessage = $("#moreMessage");
+  moreMessage.slideToggle("slow");
+  $(e).text($(e).text() == "see more ..." ? "hide text" : "see more ...");
+}
+
+// -------- Message form CEO
