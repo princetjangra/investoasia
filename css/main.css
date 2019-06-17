@@ -1468,6 +1468,7 @@ blockquote cite span {
   transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out, -moz-transform .3s ease-in-out;
 }
 
+
 .navigation_close::before, .navigation_close::after {
   content: '';
   display: block;
