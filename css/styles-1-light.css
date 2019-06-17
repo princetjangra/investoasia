@@ -944,7 +944,7 @@ button:focus,
       position: relative;
       display: inline-block;
       margin-top: 1rem; }
-      .main-team .team-container-sub .job-title::before {
+      /* .main-team .team-container-sub .job-title::before {
         content: '';
         width: 90px;
         height: 7px;
@@ -953,7 +953,7 @@ button:focus,
         left: -110%;
         top: 50%;
         -webkit-transform: translate3d(0, -50%, 0);
-                transform: translate3d(0, -50%, 0); }
+                transform: translate3d(0, -50%, 0); } */
     .main-team .team-container-sub .description {
       font-size: 0.75rem;
       line-height: 1.5; }
