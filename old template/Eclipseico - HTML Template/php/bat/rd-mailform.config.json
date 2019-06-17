@@ -1,0 +1,8 @@
+{
+  "recipientEmail": "PUT_YOUR_G-MAIL_HERE",
+  "useSmtp": true,
+  "host": "smtp.gmail.com",
+  "port": 465,
+  "username": "PUT_YOUR_G-MAIL_HERE",
+  "password": "PUT_YOUR_G-MAIL_PASSWORD_HERE"
+}
