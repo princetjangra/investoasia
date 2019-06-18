@@ -1,3 +1,8 @@
+:root {
+   --fontPoppins: "Poppins", "Segoe UI", "Arial", sans-serif;
+   --fontRaleway: "Raleway", "Arial", sans-serif;
+}
+
 .w3-container ul {
    list-style-type: square;
 }
@@ -211,28 +216,42 @@ div.hb p {
 .coin-about {
    margin-left: -9%;
 }
-.coin-about h6 {
-   display: inline-block;
-   background-color: rgba(129, 135, 140, 0.1);
-   color: #535b62;
-   padding: 1px 6px;
-   border-radius: 5px;
-}
+   .coin-about h3 {
+      font-family: var(--fontPoppins);
+      font-weight: 500;
+   }
+   .coin-about h4 {
+      font-family: var(--fontPoppins);
+      font-size: 1.2rem;
+      font-weight: normal;
+   }
+   .coin-about h6 {
+      display: inline-block;
+      background-color: #e7e7e7;
+      color: #666;
+      padding: 3px 6px;
+      border-radius: 2px;
+      /* font-family: var(--fontPoppins); */
+      font-weight: 300;
+      font-size: 0.75rem;
+   }
 .current-value {
-   transform: translate(90%, 0);
+   /* transform: translate(90%, 0); */
 }
 .current-value,
 .min-invest h5 {
    color: #535b6288;
 }
+   .current-value h3 {
+      color: rgba(25, 175, 85, 0.555);
+      font: 500 20px var(--fontPoppins);
+   }
 
-.current-value h3 {
-   font-size: 20px;
-   color: rgba(25, 175, 85, 0.555);
-}
 /* Coin Content styles End */
 
+
 /* Stock Invest styles Start */
+
 .stock-invest {
    padding-top: 30px;
 }
@@ -242,27 +261,25 @@ div.hb p {
 .min-invest {
    padding: 10px 30px;
 }
+   .min-invest p {
+      display: inline-block;
+      font: 1.5em sans-serif;
+      margin-right: 0.7em;
+   }
+   .min-invest button {
+      padding: 5px 10px;
+      font: 500 1.25rem sans-serif;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      color: rgba(255, 255, 255, 0.856);
+      background-color: mediumseagreen;
+      transition: 0.3s;
+   }
+      .min-invest button:hover {
+         background-color: seagreen;
+      }
 
-.min-invest p {
-   display: inline-block;
-   font: 1.5em sans-serif;
-   margin-right: 0.7em;
-}
-
-.min-invest button {
-   padding: 5px 10px;
-   font: 1.7rem sans-serif;
-   font-weight: 500;
-   border: none;
-   outline: none;
-   border-radius: 4px;
-   color: rgba(255, 255, 255, 0.856);
-   background-color: mediumseagreen;
-   transition: 0.3s;
-}
-.min-invest button:hover {
-   background-color: seagreen;
-}
 /* Stock Invest styles End */
 
 /* Graph styles Start */
@@ -270,49 +287,69 @@ div.hb p {
 /* Style the tab */
 
 .graph {
-   padding-top: 30px;
-   margin-bottom: 120px;
+  padding-top: 30px;
+  margin-bottom: 120px;
 }
+  .graph > div:first-child{
+    margin-left: 12%;
+  }
+    @media (min-width: 992px){
+      .graph > div:first-child > p {
+        width: 300px;
+      }
+    }
+    .graph .stock-options-group > div > span{
+      /* font-family: var(--fontRaleway); */
+      font-weight: 300;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: #ff7900;
+    }
+    .graph > div:first-child > p{
+      color: #000;
+      font-weight: 500;
+    }
+    .graph .increasing-stock {
+      color: lightseagreen;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+  .graph .tab {
+    overflow: hidden;
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+  }
+    /* Style the buttons inside the tab */
+    .graph .tab button {
+      background-color: inherit;
+      float: left;
+      border: 1px solid rgba(0, 0, 0, 0.158);
+      outline: none;
+      cursor: pointer;
+      padding: 5px 8px;
+      transition: 0.3s;
+      font-size: 14px;
+    }
+    .tab button:nth-child(-n + 3) {
+      border-right: 0;
+    }
+    .left-radius {
+      border-radius: 3px 0 0 3px;
+    }
 
-.graph .tab {
-   overflow: hidden;
-   width: 70%;
-   display: flex;
-   justify-content: flex-end;
-}
-
-/* Style the buttons inside the tab */
-.graph .tab button {
-   background-color: inherit;
-   float: left;
-   border: 1px solid rgba(0, 0, 0, 0.158);
-   outline: none;
-   cursor: pointer;
-   padding: 5px 8px;
-   transition: 0.3s;
-   font-size: 14px;
-}
-.tab button:nth-child(-n + 3) {
-   border-right: 0;
-}
-.left-radius {
-   border-radius: 3px 0 0 3px;
-}
-
-.right-radius {
-   border-radius: 0 3px 3px 0;
-}
-
-/* Change background color of buttons on hover */
-.graph .tab button:hover {
-   color: #3a49c9;
-}
-
-/* Create an active/current tablink class */
-.graph .tab button.active {
-   color: #3a49c9;
-   background-color: gainsboro;
-}
+    .right-radius {
+      border-radius: 0 3px 3px 0;
+    }
+      /* Change background color of buttons on hover */
+      .graph .tab button:hover {
+        color: #3a49c9;
+      }
+      /* Create an active/current tablink class */
+      .graph .tab button.active {
+        color: #3a49c9;
+        background-color: gainsboro;
+      }
 
 /* Style the tab content */
 .graph .tabcontent {
@@ -331,16 +368,23 @@ div.hb p {
       margin-left: 2%;
       margin-right: 3%;
    }
+   .graph > div:first-child{
+    margin-left: 3%;
+  }
 }
 
-@media (min-width: 600px) {
-   .graph .graphContainer {
-      margin-left: 10%;
-      margin-right: 10%;
-   }
+@media (min-width: 576px) {
+  .graph .graphContainer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .graph > div:first-child{
+    margin-right: 10%;
+    margin-left: 10%;
+  }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
    .setChart {
       width: 500px;
       height: 430px;
@@ -350,10 +394,17 @@ div.hb p {
       padding-left: 15px;
       margin-left: 10%;
       margin-right: 10%;
-   }
+    }
+    .graph > div:first-child{
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+  .graph > div:first-child > p {
+    width: 250px;
+  }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
    .setChart {
       width: 500px;
       height: 420px;
@@ -363,7 +414,11 @@ div.hb p {
       padding-left: 15px;
       margin-left: 15%;
       margin-right: 25%;
-   }
+    }
+    .graph > div:first-child{
+      margin-left: 15%;
+      margin-right: 0%;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -387,7 +442,11 @@ div.hb p {
       padding-left: 100px;
       margin-left: 12%;
       margin-right: 29%;
-   }
+    }
+    .graph > div:first-child{
+      margin-left: 12%;
+      margin-right: 29%;
+  }
 }
 
 /* ------------------------------- */
