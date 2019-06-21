@@ -48,7 +48,7 @@ x_lbd_free/
 ├── notifications.html
 ├── holdings.html
 ├── template.html
-├── invest.html
+├── ./../platform.html
 ├── upgrade.html
 └── orders.html
 

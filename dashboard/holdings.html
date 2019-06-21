@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href=" img/favicon.ico" />
+    <link rel="icon" type="image/png" href="./../images/icons/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>InvestoAsia</title>
+    <title>InvestoAsia | Holdings</title>
 
     <meta
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
@@ -24,7 +24,7 @@
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <!-- <link href=" css/demo.css" rel="stylesheet" /> -->
-     <!-- Custom CSS File to fix side nav due to older bootstrap -->
+    <!-- Custom CSS File to fix side nav due to older bootstrap -->
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/holdings.css" />
 
@@ -42,7 +42,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="sidebar" data-color="purple" data-image=" img/sidebar-5.jpg">
+      <div class="sidebar" data-color="orange">
         <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
 
         <div class="sidebar-wrapper">
@@ -66,7 +66,7 @@
               </a>
             </li>
             <li>
-              <a href="invest.html">
+              <a href="./../platform.html">
                 <i class="pe-7s-science"></i>
                 <p>Invest</p>
               </a>
@@ -157,23 +157,20 @@
           </div>
         </nav>
 
-        <section class="holdings">
+        <section class="holdings pt-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6 headTag">
-                <h3>Holdings (100 <b>Tokens</b> worth <b>&#36;400</b>)</h3>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Reiciendis rem velit quae voluptatibus minima optio ea
-                  excepturi debitis quod, pariatur praesentium at sunt dolor!
-                  Aliquid deserunt tenetur eaque repellat ex repellendus,
-                  debitis dolorum ducimus voluptate quam. Soluta ut atque
-                  tempore!
-                </p>
+                <h3>Holdings <br /></h3>
+                <div>
+                  <span>25000</span> Tokens, worth <span>&#36;25200</span> wons
+                </div>
               </div>
               <div class="col-md-6 btns">
-                <div class="col-md-4 buy">
-                  <button class="btn btn-success">BUY</button>
+                <div class="col-md-4  buy">
+                  <a href="payment.html"
+                    ><button class="btn btn-success">BUY</button></a
+                  >
                 </div>
                 <div class="col-md-4 sell">
                   <button class="btn btn-warning" onclick="openButton()">
@@ -185,12 +182,132 @@
           </div>
         </section>
 
+        <section class="holdings-table pt-5">
+          <div class="container">
+            <table class="table table-hover table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">Holdings</th>
+                  <th scope="col">Qty</th>
+                  <th scope="col">Index Value</th>
+                  <th scope="col">Current Value</th>
+                  <th scope="col">P&L</th>
+                  <th scope="col">Net Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>India Top 100</td>
+                  <td>1000</td>
+                  <td>Demo</td>
+                  <td>11250</td>
+                  <td>1250</td>
+                  <td>+12.5%</td>
+
+                  <td>
+                    <button type="button" class="btn btn-warning">
+                      Add to Cart
+                    </button>
+                  </td>
+                  <td>
+                    <a href="redeem.html">
+                      <button type="button" class="btn btn-success">
+                        Redeem
+                      </button></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>India ETF CONSUMPTION</td>
+                  <td>2000</td>
+                  <td>Demo</td>
+                  <td>2700</td>
+                  <td>700</td>
+                  <td>+7%</td>
+                  <td>
+                    <button type="button" class="btn btn-warning">
+                      Add to Cart
+                    </button>
+                  </td>
+                  <td>
+                    <a href="redeem.html"
+                      ><button type="button" class="btn btn-success">
+                        Redeem
+                      </button></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>iShares J.P. Morgan USD Asia Credit Bond Index ETF</td>
+                  <td>5200</td>
+                  <td>Demo</td>
+                  <td>6200</td>
+                  <td>1000</td>
+                  <td>+10%</td>
+                  <td>
+                    <button type="button" class="btn btn-warning">
+                      Add to Cart
+                    </button>
+                  </td>
+                  <td>
+                    <a href="redeem.html"
+                      ><button type="button" class="btn btn-success">
+                        Redeem
+                      </button></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>iShares MSCI Thailand Capped ETF (THD)</td>
+                  <td>4200</td>
+                  <td>Demo</td>
+                  <td>5820</td>
+                  <td>1620</td>
+                  <td>+16.2%</td>
+                  <td>
+                    <button type="button" class="btn btn-warning">
+                      Add to Cart
+                    </button>
+                  </td>
+                  <td>
+                    <a href="redeem.html">
+                      <button type="button" class="btn btn-success">
+                        Redeem
+                      </button></a
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td>VanEck Vectors Vietnam ETF (VNM)</td>
+                  <td>3800</td>
+                  <td>Demo</td>
+                  <td>4620</td>
+                  <td>820</td>
+                  <td>+8.2%</td>
+                  <td>
+                    <button type="button" class="btn btn-warning">
+                      Add to Cart
+                    </button>
+                  </td>
+                  <td>
+                    <a href="redeem.html">
+                      <button type="button" class="btn btn-success">
+                        Redeem
+                      </button>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <footer class="footer">
           <div class="container-fluid">
             <p class="copyright pull-right">
               &copy;
               <script>
-                document.write(new Date().getFullYear());
+                document.write(new Date().getFullYear())
               </script>
               <a href="http://www.creative-tim.com">InvestoAsia</a>
             </p>
