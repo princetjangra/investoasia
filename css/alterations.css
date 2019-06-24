@@ -3,6 +3,10 @@
   --fontRaleway: "Raleway", "Arial", sans-serif;
 }
 
+body {
+  line-height: 1.5;
+}
+
 .w3-container ul li {
   list-style: none;
   background-image: url(/images/icons/checked.png);

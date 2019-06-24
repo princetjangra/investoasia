@@ -19,6 +19,16 @@ html,
   text-decoration: none;
 }
 
+.collapse:not(.show) {
+  display: inline-block;
+}
+
+@media (min-width: 991px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
 .stat-container > img {
   display: block;
 }
@@ -103,15 +113,13 @@ div#button-addon4 > button.btn-outline-secondary {
 
 /* CSS for Holdings page ---------- */
 
-.bg-seagreen {
-}
-
 .holdings .headTag {
-  padding: 20px 50px;
   font-size: 30px;
-
-  border-radius: 5px;
+  /* border-radius: 5px; */
   background: linear-gradient(90deg, #ffbf008e, #ff77008f);
+}
+.holdings .headTag {
+  padding: 1.25rem;
 }
 .headTag > h3 {
   text-transform: uppercase;
@@ -119,12 +127,22 @@ div#button-addon4 > button.btn-outline-secondary {
 }
 
 .headTag > div {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.headTag div:nth-child(2) {
+  padding: 1.25rem;
 }
 
-.headTag > div span {
-  font-size: 1.75rem;
-  color: #19af55d0;
+  .headTag > div span {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #19af55d0;
+    font-family: "Segoe UI", Arial, sans-serif;
+  }
+
+table td button {
+  min-width: 112px;
 }
 
 /* ---------- CSS for Holdings page */
@@ -136,9 +154,13 @@ div#button-addon4 > button.btn-outline-secondary {
   color: white;
 }
 
-.btn-warning:hover {
+.btn-warning {
   color: white;
-  background-color: darkorange;
+  /* background-color: #ffa434; */
+}
+  .btn-warning:hover {
+    color: white;
+    background-color: #ff7128;
 }
 
 .btn-danger:hover {
@@ -246,12 +268,12 @@ div#button-addon4 > button.btn-outline-secondary {
 
   .btns .btn {
     font-size: 22px;
-    margin-top: -150px;
-    margin-left: 50px;
+    /* margin-top: -150px; */
+    /* margin-left: 50px; */
   }
 
   .holdings-table {
-    margin-top: -200px;
+    /* margin-top: -200px; */
   }
 
   /* .btn {
@@ -277,7 +299,7 @@ div#button-addon4 > button.btn-outline-secondary {
     margin-top: -200px !important;
   }
   .holdings {
-    margin-left: 500px;
+    /* margin-left: 500px; */
   }
 }
 

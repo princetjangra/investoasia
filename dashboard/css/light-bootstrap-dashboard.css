@@ -1683,14 +1683,14 @@ fieldset[disabled] .btn-neutral.active {
 
 .navbar .navbar-brand {
     font-weight: 400;
-    margin: 5px 0px;
-    padding: 15px 15px;
+    /* margin: 5px 0px; */
+    /* padding: 15px 15px; */
     font-size: 20px;
 }
 
 .navbar .navbar-nav > li > a {
     padding: 10px 15px;
-    margin: 10px 3px;
+    /* margin: 10px 3px; */
     position: relative;
 }
 
@@ -2610,6 +2610,7 @@ fieldset[disabled] .btn-neutral.active {
     .navbar-collapse .nav,
     .sidebar .nav {
         margin-top: 10px;
+        width: 100%;
     }
     .nav-open .navbar-collapse,
     .nav-open .sidebar {
@@ -3044,7 +3045,7 @@ fieldset[disabled] .btn-neutral.active {
         display: block;
     }
     .navbar-header .collapse, .navbar-toggle {
-        display: block !important;
+        display: inline-block !important;
     }
     .navbar-header {
         float: none;
