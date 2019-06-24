@@ -1,4 +1,4 @@
-// coin2-6M js start
+// coin5-6M js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -10,32 +10,32 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["November", "December", "2019", "February", "March", "April"]
+var MONTHS = ["December", "2019", "February", "March", "April", "May"]
 var config = {
   type: "line",
   data: {
     labels: MONTHS,
     datasets: [
+      // {
+      //   label: "Reference",
+      //   backgroundColor: window.chartColors.orange,
+      //   borderColor: window.chartColors.orange,
+      //   data: [
+      //     144.5883686,
+      //     147.7797382,
+      //     154.2233905,
+      //     154.1568045,
+      //     156.993245,
+      //     145.6339756
+      //   ],
+      //   fill: false
+      // },
       {
-        label: "Reference",
-        backgroundColor: window.chartColors.orange,
-        borderColor: window.chartColors.orange,
-        data: [
-          147.5755355,
-          144.5883686,
-          147.7797382,
-          154.2233905,
-          154.1568045,
-          156.993245
-        ],
-        fill: false
-      },
-      {
-        label: "Coin 2",
+        label: "Coin 5",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
-        data: [201.84539, 203.85358, 201.36354, 215.19709, 221.4113, 215.60121]
+        data: [169.9969, 178.61472, 184.5071, 186.6557, 188.250244, 194.0533]
       }
     ]
   },
@@ -43,7 +43,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 5",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -68,9 +68,9 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 250,
-            min: 50,
-            stepSize: 50
+            max: 200,
+            min: 165,
+            stepSize: 5
           }
         }
       ]
@@ -85,9 +85,9 @@ var lineChart = new Chart(ctx, {
   options: config.options
 })
 
-// coin2-6M js end
+// coin5-6M js end
 
-//coin2-1Y js start
+//coin5-1Y js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -100,7 +100,6 @@ window.chartColors = {
 }
 
 var MONTHS = [
-  "May",
   "June",
   "July",
   "August",
@@ -111,52 +110,53 @@ var MONTHS = [
   "2019",
   "February",
   "March",
-  "April"
+  "April",
+  "May"
 ]
 var config = {
   type: "line",
   data: {
     labels: MONTHS,
     datasets: [
+      // {
+      //   label: "Reference",
+      //   backgroundColor: window.chartColors.orange,
+      //   borderColor: window.chartColors.orange,
+      //   data: [
+      //     174.663082,
+      //     170.6447724,
+      //     162.4924253,
+      //     161.6283537,
+      //     165.9843375,
+      //     148.4817616,
+      //     146.0479499,
+      //     144.5883686,
+      //     147.7797382,
+      //     154.2233905,
+      //     154.1568045,
+      //     156.993245,
+      //     145.6339756
+      //   ],
+      //   fill: false
+      // },
       {
-        label: "Reference",
-        backgroundColor: window.chartColors.orange,
-        borderColor: window.chartColors.orange,
-        data: [
-          174.5835863,
-          174.663082,
-          170.6447724,
-          162.4924253,
-          161.6283537,
-          165.9843375,
-          148.4817616,
-          146.0479499,
-          144.5883686,
-          147.7797382,
-          154.2233905,
-          154.1568045,
-          156.993245
-        ],
-        fill: false
-      },
-      {
-        label: "Coin 2",
+        label: "Coin 5",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
         data: [
-          209.27509,
-          212.47701,
-          221.34913,
-          210.08334,
-          187.43985,
-          200.58637,
-          201.84539,
-          203.85358,
-          201.36354,
-          215.19709,
-          221.4113,
-          215.60121
+          150.87349,
+          149.08929,
+          148.39083,
+          151.2786,
+          158.68207,
+          160.74591,
+          169.9969,
+          178.61472,
+          184.5071,
+          186.6557,
+          188.250244,
+          194.0533
         ]
       }
     ]
@@ -165,7 +165,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 5",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -190,9 +190,9 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 240,
-            min: 140,
-            stepSize: 20
+            max: 200,
+            min: 120,
+            stepSize: 10
           }
         }
       ]
@@ -207,9 +207,9 @@ var lineChart = new Chart(ctx, {
   options: config.options
 })
 
-//coin2-1Y js end
+//coin5-1Y js end
 
-//coin2-3Y js start
+//coin5-3Y js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -221,42 +221,42 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["2017", "June", "October", "2018", "June", "Oct", "2019", "April"]
+var MONTHS = ["2017", "June", "October", "2018", "June", "Oct", "2019", "May"]
 var config = {
   type: "line",
   data: {
     labels: MONTHS,
     datasets: [
+      // {
+      //   label: "Reference",
+      //   backgroundColor: window.chartColors.orange,
+      //   borderColor: window.chartColors.orange,
+      //   data: [
+      //     159.0888179,
+      //     169.5566051,
+      //     180.6029101,
+      //     175.7761001,
+      //     165.615384,
+      //     148.4187616,
+      //     155.572197,
+      //     145.6339756
+      //   ],
+      //   fill: false
+      // },
       {
-        label: "Reference",
-        backgroundColor: window.chartColors.orange,
-        borderColor: window.chartColors.orange,
-        data: [
-          159.0888179,
-          169.5566051,
-          180.6029101,
-          175.7761001,
-          165.615384,
-          148.4187616,
-          155.572197,
-          145.6339756
-        ],
-        fill: false
-      },
-      {
-        label: "Coin 2",
+        label: "Coin 5",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
         data: [
-          192.1774549,
-          209.30617,
-          217.3576,
-          210.6429,
-          212.477,
-          200.58637,
-          215.19709,
-          215.60121
+          126.9442,
+          129.38477,
+          134.03712,
+          148.58387,
+          149.93872,
+          167.1856,
+          175.23426,
+          188.58751
         ]
       }
     ]
@@ -265,7 +265,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 5",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -290,8 +290,8 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 240,
-            min: 140,
+            max: 200,
+            min: 100,
             stepSize: 20
           }
         }
@@ -306,9 +306,9 @@ var lineChart = new Chart(ctx, {
   data: config.data,
   options: config.options
 })
-//coin2-3Y js end
+//coin5-3Y js end
 
-//coin2-MAX js start
+//coin5-MAX js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -320,42 +320,60 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"]
+var MONTHS = [
+  "2009",
+  "2010",
+  "2011",
+  "2012",
+  "2013",
+  "2014",
+  "2015",
+  "2016",
+  "2017",
+  "2018",
+  "2019"
+]
 var config = {
   type: "line",
   data: {
     labels: MONTHS,
     datasets: [
+      // {
+      //   label: "Reference",
+      //   backgroundColor: window.chartColors.orange,
+      //   borderColor: window.chartColors.orange,
+      //   data: [
+      //     116.43529,
+      //     138.9312089,
+      //     140.6461051,
+      //     137.3591873,
+      //     139.1316794,
+      //     140.5921032,
+      //     142.9522851,
+      //     140.9642297,
+      //     164.479112,
+      //     164.2796042,
+      //     152.4546931
+      //   ],
+      //   fill: false
+      // },
       {
-        label: "Reference",
-        backgroundColor: window.chartColors.orange,
-        borderColor: window.chartColors.orange,
-        data: [
-          137.3591873,
-          139.1316794,
-          140.5921032,
-          142.9522851,
-          140.9642297,
-          164.479112,
-          164.2796042,
-          152.4546931
-        ],
-        fill: false
-      },
-      {
-        label: "Coin 2",
+        label: "Coin 5",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
         data: [
-          90.87109,
-          90.51416,
-          109.2227,
-          132.42308,
-          176.30395,
-          207.50608,
-          208.15119,
-          213.86494
+          106.6815,
+          128.3286,
+          163.5448,
+          173.04893,
+          144.35636,
+          130.09715,
+          118.59891,
+          127.4266,
+          128.45509,
+          152.37677,
+          186.77427
         ]
       }
     ]
@@ -364,7 +382,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 5",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -389,8 +407,8 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 220,
-            min: 80,
+            max: 200,
+            min: 100,
             stepSize: 20
           }
         }
@@ -405,7 +423,7 @@ var lineChart = new Chart(ctx, {
   data: config.data,
   options: config.options
 })
-//coin2-MAX js end
+//coin5-MAX js end
 
 // graph js start
 

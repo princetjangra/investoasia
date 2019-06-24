@@ -1,4 +1,4 @@
-// coin2-6M js start
+// coin3-6M js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -10,7 +10,7 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["November", "December", "2019", "February", "March", "April"]
+var MONTHS = ["December", "2019", "February", "March", "April", "May"]
 var config = {
   type: "line",
   data: {
@@ -21,21 +21,21 @@ var config = {
         backgroundColor: window.chartColors.orange,
         borderColor: window.chartColors.orange,
         data: [
-          147.5755355,
           144.5883686,
           147.7797382,
           154.2233905,
           154.1568045,
-          156.993245
+          156.993245,
+          145.6339756
         ],
         fill: false
       },
       {
-        label: "Coin 2",
+        label: "Coin 3",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
-        data: [201.84539, 203.85358, 201.36354, 215.19709, 221.4113, 215.60121]
+        data: [166.18, 177.39, 179.73, 183.75, 195.94, 192.13]
       }
     ]
   },
@@ -43,7 +43,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 3",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -85,9 +85,9 @@ var lineChart = new Chart(ctx, {
   options: config.options
 })
 
-// coin2-6M js end
+// coin3-6M js end
 
-//coin2-1Y js start
+//coin3-1Y js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -100,7 +100,6 @@ window.chartColors = {
 }
 
 var MONTHS = [
-  "May",
   "June",
   "July",
   "August",
@@ -111,7 +110,8 @@ var MONTHS = [
   "2019",
   "February",
   "March",
-  "April"
+  "April",
+  "May"
 ]
 var config = {
   type: "line",
@@ -123,7 +123,6 @@ var config = {
         backgroundColor: window.chartColors.orange,
         borderColor: window.chartColors.orange,
         data: [
-          174.5835863,
           174.663082,
           170.6447724,
           162.4924253,
@@ -135,28 +134,29 @@ var config = {
           147.7797382,
           154.2233905,
           154.1568045,
-          156.993245
+          156.993245,
+          145.6339756
         ],
         fill: false
       },
       {
-        label: "Coin 2",
+        label: "Coin 3",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
         data: [
-          209.27509,
-          212.47701,
-          221.34913,
-          210.08334,
-          187.43985,
-          200.58637,
-          201.84539,
-          203.85358,
-          201.36354,
-          215.19709,
-          221.4113,
-          215.60121
+          158.4,
+          158.04,
+          159.44,
+          161.7,
+          158.31,
+          162.79,
+          166.18,
+          177.39,
+          179.73,
+          183.75,
+          195.94,
+          192.13
         ]
       }
     ]
@@ -165,7 +165,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 3",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -190,8 +190,8 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 240,
-            min: 140,
+            max: 220,
+            min: 100,
             stepSize: 20
           }
         }
@@ -207,9 +207,9 @@ var lineChart = new Chart(ctx, {
   options: config.options
 })
 
-//coin2-1Y js end
+//coin3-1Y js end
 
-//coin2-3Y js start
+//coin3-3Y js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -221,7 +221,7 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["2017", "June", "October", "2018", "June", "Oct", "2019", "April"]
+var MONTHS = ["2017", "June", "October", "2018", "June", "Oct", "2019", "May"]
 var config = {
   type: "line",
   data: {
@@ -244,20 +244,11 @@ var config = {
         fill: false
       },
       {
-        label: "Coin 2",
+        label: "Coin 3",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
-        data: [
-          192.1774549,
-          209.30617,
-          217.3576,
-          210.6429,
-          212.477,
-          200.58637,
-          215.19709,
-          215.60121
-        ]
+        data: [129.03, 135.33, 139.59, 148.65, 158.4, 158.31, 179.73, 192.13]
       }
     ]
   },
@@ -265,7 +256,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 3",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -290,8 +281,8 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 240,
-            min: 140,
+            max: 200,
+            min: 100,
             stepSize: 20
           }
         }
@@ -306,9 +297,9 @@ var lineChart = new Chart(ctx, {
   data: config.data,
   options: config.options
 })
-//coin2-3Y js end
+//coin3-3Y js end
 
-//coin2-MAX js start
+//coin3-MAX js start
 
 window.chartColors = {
   red: "rgb(255, 99, 132)",
@@ -320,7 +311,19 @@ window.chartColors = {
   grey: "rgb(231,233,237)"
 }
 
-var MONTHS = ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019"]
+var MONTHS = [
+  "2009",
+  "2010",
+  "2011",
+  "2012",
+  "2013",
+  "2014",
+  "2015",
+  "2016",
+  "2017",
+  "2018",
+  "2019"
+]
 var config = {
   type: "line",
   data: {
@@ -331,6 +334,9 @@ var config = {
         backgroundColor: window.chartColors.orange,
         borderColor: window.chartColors.orange,
         data: [
+          116.43529,
+          138.9312089,
+          140.6461051,
           137.3591873,
           139.1316794,
           140.5921032,
@@ -343,19 +349,22 @@ var config = {
         fill: false
       },
       {
-        label: "Coin 2",
+        label: "Coin 3",
         fill: false,
         backgroundColor: window.chartColors.blue,
         borderColor: window.chartColors.blue,
         data: [
-          90.87109,
-          90.51416,
-          109.2227,
-          132.42308,
-          176.30395,
-          207.50608,
-          208.15119,
-          213.86494
+          109.82404,
+          124.87,
+          125.25,
+          125.06,
+          134.66,
+          135.23,
+          133.72,
+          117.71,
+          135.43,
+          158.3,
+          185.98
         ]
       }
     ]
@@ -364,7 +373,7 @@ var config = {
     responsive: true,
     title: {
       display: true,
-      text: "Coin 2",
+      text: "Coin 3",
       fontSize: 30,
       fontColor: "#d4af37"
     },
@@ -389,8 +398,8 @@ var config = {
       yAxes: [
         {
           ticks: {
-            max: 220,
-            min: 80,
+            max: 200,
+            min: 100,
             stepSize: 20
           }
         }
@@ -405,7 +414,7 @@ var lineChart = new Chart(ctx, {
   data: config.data,
   options: config.options
 })
-//coin2-MAX js end
+//coin3-MAX js end
 
 // graph js start
 

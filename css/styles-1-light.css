@@ -616,10 +616,10 @@ button:focus,
 }
 .main-header .header-right-side {
   position: absolute;
-  background: url("../images/emerging.png");
+  background: url("../images/bg2.png");
   background-size: cover;
   right: 0;
-  top: -100px;
+  top: -5px;
   width: 65%;
   height: 100%;
 }

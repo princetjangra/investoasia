@@ -285,7 +285,7 @@ div.hb p {
   font: 1.5em sans-serif;
   margin-right: 0.7em;
 }
-.min-invest button {
+.min-invest button:first-of-type {
   padding: 5px 10px;
   font: 500 1.25rem sans-serif;
   border: none;
@@ -295,7 +295,7 @@ div.hb p {
   background-color: #19af55;
   transition: 0.3s;
 }
-.min-invest button:hover {
+.min-invest button:first-of-type:hover {
   background-color: seagreen;
 }
 
