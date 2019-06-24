@@ -1256,7 +1256,7 @@ button:focus,
   /* font-size: 0.75rem; */
   line-height: 1.5;
 }
-.main-team .team-container-sub img {
+.main-team .team-container-sub.about-us img {
   position: absolute;
   border-radius: 50%;
   top: -8%;
@@ -1266,6 +1266,13 @@ button:focus,
   width: 130px;
   max-width: 100%;
   border: 7px solid #ffffff;
+}
+.main-team .team-container-sub.index-page img {
+  border-radius: 50%;
+  width: 130px;
+  max-width: 100%;
+  border: 7px solid #ffffff;
+  margin-bottom: 1.25rem;
 }
 .main-team .team-container-sub i {
   padding: 0 0.2rem;
