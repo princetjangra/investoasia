@@ -19,6 +19,10 @@ html,
   text-decoration: none;
 }
 
+.collapse:not(.show) {
+  display: inline-block;
+}
+
 @media (min-width: 991px) {
   .navbar-toggler {
     display: none;

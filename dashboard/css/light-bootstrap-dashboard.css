@@ -1690,7 +1690,7 @@ fieldset[disabled] .btn-neutral.active {
 
 .navbar .navbar-nav > li > a {
     padding: 10px 15px;
-    margin: 10px 3px;
+    /* margin: 10px 3px; */
     position: relative;
 }
 
@@ -2610,6 +2610,7 @@ fieldset[disabled] .btn-neutral.active {
     .navbar-collapse .nav,
     .sidebar .nav {
         margin-top: 10px;
+        width: 100%;
     }
     .nav-open .navbar-collapse,
     .nav-open .sidebar {
