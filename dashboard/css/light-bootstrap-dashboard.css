@@ -1683,8 +1683,8 @@ fieldset[disabled] .btn-neutral.active {
 
 .navbar .navbar-brand {
     font-weight: 400;
-    margin: 5px 0px;
-    padding: 15px 15px;
+    /* margin: 5px 0px; */
+    /* padding: 15px 15px; */
     font-size: 20px;
 }
 
@@ -3044,7 +3044,7 @@ fieldset[disabled] .btn-neutral.active {
         display: block;
     }
     .navbar-header .collapse, .navbar-toggle {
-        display: block !important;
+        display: inline-block !important;
     }
     .navbar-header {
         float: none;
