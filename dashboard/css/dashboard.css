@@ -134,12 +134,12 @@ div#button-addon4 > button.btn-outline-secondary {
   padding: 1.25rem;
 }
 
-  .headTag > div span {
-    font-size: 1.75rem;
-    font-weight: 400;
-    color: #19af55d0;
-    font-family: "Segoe UI", Arial, sans-serif;
-  }
+.headTag > div span {
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: #19af55d0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
 
 table td button {
   min-width: 112px;
@@ -158,9 +158,9 @@ table td button {
   color: white;
   /* background-color: #ffa434; */
 }
-  .btn-warning:hover {
-    color: white;
-    background-color: #ff7128;
+.btn-warning:hover {
+  color: white;
+  background-color: #ff7128;
 }
 
 .btn-danger:hover {
@@ -231,12 +231,12 @@ table td button {
 
 /* map css start */
 .asia-map-container {
-  margin-top: -200px !important;
+  /* margin-top: -200px !important; */
 }
 
 @media (max-width: 767px) {
   .asia-map-container {
-    margin-top: -30px !important;
+    /* margin-top: -30px !important; */
   }
   .payment-container {
     max-width: 90%;

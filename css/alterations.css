@@ -53,7 +53,7 @@ body {
     rgba(255, 119, 0, 0.6),
     rgba(255, 191, 0, 0.6)
   );
-  margin-top: -120px;
+  /* margin-top: -120px; */
   z-index: -6;
   /* min-height: calc(100vh - (4.3vh)); */
 }
