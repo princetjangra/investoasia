@@ -65,12 +65,21 @@ html,
 .stat-container {
   font-size: 1.15em;
 }
+  .stat-container p {
+    font-size: 1.05rem;
+  }
 
 .stat-container > h3 {
   color: #ff7900;
   font-family: "Poppins", "Open Sans", "Segoe UI";
   font-weight: 500;
 }
+
+  .stat-container:nth-child(-n+3) b {
+    color: #ff7128;
+    /* font-size: 1.25rem; */
+    font: 500 1.25rem "Poppins", "Segoe UI", "Open Sans", Arial, sans-serif;
+  }
 
 .bg-grey {
   background: linear-gradient(90deg, #ffbf0056, #ff770056);

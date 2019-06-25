@@ -69,7 +69,7 @@ h6 {
 }
 
 p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .main-section {
@@ -2058,14 +2058,15 @@ button:focus,
 /* comparison table styles start  */
 .w3-button {
   background-color: rgba(169, 169, 169, 0.13);
-  border-radius: 7px;
+  /* border-radius: 7px; */
+  line-height: 1.8;
   font-size: 20px;
   font-weight: 500;
   outline: none;
   border: none;
   outline: none;
   padding: 5px 30px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
 }
 
 .w3-button:hover {
