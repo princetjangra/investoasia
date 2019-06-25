@@ -615,13 +615,13 @@ button:focus,
   max-width: 70%;
 }
 .main-header .header-right-side {
-  position: absolute;
+  /* position: absolute; */
   background: url("../images/bg2.png");
   background-size: cover;
-  right: 0;
+  right: -120px;
   top: -5px;
-  width: 65%;
-  height: 100%;
+  /* width: 63%; */
+  /* height: 70%; */
 }
 
 /* ------------------------------------- */
@@ -2101,6 +2101,11 @@ button:focus,
   .vdo {
     height: 110%;
     width: 90%;
+  }
+  .main-header .header-right-side {
+    height: 260px;
+    right: 0;
+    top: 0;
   }
 }
 
