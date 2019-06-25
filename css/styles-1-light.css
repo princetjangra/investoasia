@@ -104,6 +104,9 @@ button:focus,
   position: relative;
   margin: 3rem 0;
 }
+.main-section .section-title {
+  margin: 0.5rem 0 1rem;
+}
 .section-title .main-text {
   position: relative;
 }
@@ -753,7 +756,7 @@ button:focus,
 }
 .main-about .left-container .blue-gradient-bg {
   padding: 2rem 2rem 0;
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 }
 .main-about .left-container .blue-gradient-bg p {
   color: #000000;
