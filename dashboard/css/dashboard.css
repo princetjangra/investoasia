@@ -296,7 +296,7 @@ table td button {
 
 @media (min-width: 768px) and (max-width: 991px) {
   .asia-map-container {
-    margin-top: -200px !important;
+    /* margin-top: -200px !important; */
   }
   .holdings {
     /* margin-left: 500px; */
@@ -305,7 +305,7 @@ table td button {
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .asia-map-container {
-    margin-top: -160px !important;
+    /* margin-top: -160px !important; */
   }
 }
 /* map css end */
