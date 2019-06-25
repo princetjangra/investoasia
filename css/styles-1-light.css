@@ -74,7 +74,7 @@ p {
 
 .main-section {
   margin: 0;
-  padding: 4rem 0;
+  padding: 4rem 0 0;
 }
 
 a {
@@ -426,7 +426,7 @@ button:focus,
 /*.main-navbar.nav-up {
     top: -74px; }*/
 .main-navbar .navbar-brand img {
-  width: 130px;
+  width: 118px;
 }
 .main-navbar .navbar-collapse .nav-link {
   padding: 0 1.3em;
@@ -582,7 +582,7 @@ button:focus,
   height: calc(100vh - 75px);
   max-height: 750px;
   min-height: 550px;
-  padding-bottom: 4rem;
+  /* padding-bottom: 4rem; */
   overflow: hidden;
   position: relative;
 }
@@ -619,7 +619,7 @@ button:focus,
   background: url("../images/bg2.png");
   background-size: cover;
   right: -120px;
-  top: -5px;
+  /* top: -5px; */
   /* width: 63%; */
   /* height: 70%; */
 }

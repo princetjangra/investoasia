@@ -7,6 +7,11 @@ body {
   line-height: 1.5;
 }
 
+.vdo {
+  border-radius: 12px;
+}
+
+
 .w3-container ul li {
   list-style: none;
   background-image: url(/images/icons/checked.png);
