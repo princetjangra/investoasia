@@ -65,9 +65,9 @@ html,
 .stat-container {
   font-size: 1.15em;
 }
-  .stat-container p {
-    font-size: 1.05rem;
-  }
+.stat-container p {
+  font-size: 1.05rem;
+}
 
 .stat-container > h3 {
   color: #ff7900;
@@ -75,11 +75,11 @@ html,
   font-weight: 500;
 }
 
-  .stat-container:nth-child(-n+3) b {
-    color: #ff7128;
-    /* font-size: 1.25rem; */
-    font: 500 1.25rem "Poppins", "Segoe UI", "Open Sans", Arial, sans-serif;
-  }
+.stat-container:nth-child(-n + 3) b {
+  color: #ff7128;
+  /* font-size: 1.25rem; */
+  font: 500 1.25rem "Poppins", "Segoe UI", "Open Sans", Arial, sans-serif;
+}
 
 .bg-grey {
   background: linear-gradient(90deg, #ffbf0056, #ff770056);
@@ -125,7 +125,8 @@ div#button-addon4 > button.btn-outline-secondary {
 .holdings .headTag {
   font-size: 30px;
   /* border-radius: 5px; */
-  background: linear-gradient(90deg, #ffbf008e, #ff77008f);
+  /* background: linear-gradient(90deg, #ffbf008e, #ff77008f); */
+  background: linear-gradient(90deg, #008cf054, #0180daa8);
 }
 .holdings .headTag {
   padding: 1.25rem;
@@ -142,16 +143,36 @@ div#button-addon4 > button.btn-outline-secondary {
 .headTag div:nth-child(2) {
   padding: 1.25rem;
 }
-
+.fw-4 {
+  font-weight: 400 !important;
+}
+.fw-5 {
+  font-weight: 500 !important;
+}
+.fw-6 {
+  font-weight: 600 !important;
+}
+.orange-text {
+  color: #ff7028da !important;
+}
 .headTag > div span {
   font-size: 1.75rem;
   font-weight: 400;
-  color: #19af55d0;
+  /* color: #19af55d0; */
+  color: #09863b;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
 table td button {
   min-width: 112px;
+}
+
+.holdings-table thead tr th:nth-child(n + 2) {
+  padding-right: 50px;
+}
+
+.holdings-table thead tr th:nth-child(4) {
+  padding-right: 20px;
 }
 
 /* ---------- CSS for Holdings page */
