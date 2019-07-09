@@ -336,6 +336,9 @@ input:focus {
     opacity: 1;
     background: rgba(255, 255, 255, 0.23);
 }
+.sidebar .nav li.active > a p {
+    font-weight: 600;
+}
 
 .sidebar .nav li.separator {
     margin: 15px 0;
@@ -350,7 +353,7 @@ input:focus {
     margin: 0;
     line-height: 30px;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     margin-left: 45px;
 }
