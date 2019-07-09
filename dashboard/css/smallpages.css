@@ -1,49 +1,53 @@
 h2 {
-  /* font: 1.5rem 500 Poppins, "Segoe UI", sans-serif; */
+   /* font: 1.5rem 500 Poppins, "Segoe UI", sans-serif; */
 }
 
 :root {
-  --fontPoppins: Poppins, Segoe UI, Arial;
+   --fontPoppins: Poppins, Segoe UI, Arial;
+}
+
+.jumbotron {
+   margin-top: 4.75rem;
 }
 
 input {
-  font-family: var(--fontPoppins);
-  font-weight: 500 !important;
+   font-family: var(--fontPoppins);
+   font-weight: 500 !important;
 }
 
 button.btn-height-38px {
-  height: 38px;
-  /* border-radius: 2 */
+   height: 38px;
+   /* border-radius: 2 */
 }
 
 .btn-height-38px:nth-child(2) {
-  border-radius: 0 4px 4px 0 !important;
+   border-radius: 0 4px 4px 0 !important;
 }
 
 .desc-text {
-  font-size: 0.75rem;
-  color: #aaaaaa;
-  margin-right: 13rem;
+   font-size: 0.75rem;
+   color: #aaaaaa;
+   margin-right: 13rem;
 }
 
 #no-of-tokens {
-  font-size: 1.25rem;
-  font-family: var(--fontPoppins);
-  font-weight: 600;
-  color: #19af55;
+   font-size: 1.25rem;
+   font-family: var(--fontPoppins);
+   font-weight: 600;
+   color: #19af55;
 }
 
 .stock-option {
-  font-family: Poppins, Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #414141;
+   font-family: Poppins, Arial, "Helvetica Neue", Helvetica, sans-serif;
+   color: #414141;
 }
 
 .stock-display {
-  font: 300 2.1rem "Segoe UI", sans-serif;
+   font: 300 2.1rem "Segoe UI", sans-serif;
 }
 
 .increasing-stock {
-  color: #19af55;
-  font-size: 1.75rem;
-  font-weight: 500;
+   color: #19af55;
+   font-size: 1.75rem;
+   font-weight: 500;
 }
