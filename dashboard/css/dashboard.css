@@ -152,14 +152,13 @@ div#button-addon4 > button.btn-outline-secondary {
 .fw-6 {
   font-weight: 600 !important;
 }
-.orange-text {
-  color: #ff7028da !important;
+.green-text {
+  color: #09863b !important;
 }
 .headTag > div span {
   font-size: 1.75rem;
   font-weight: 400;
   /* color: #19af55d0; */
-  color: #09863b;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 

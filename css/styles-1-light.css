@@ -114,7 +114,7 @@ button:focus,
   position: absolute;
   bottom: 135%;
   font-size: 0.4em;
-  width: 225px;
+  /* width: 225px; */
   text-align: center;
   color: #ffbe00;
 }
