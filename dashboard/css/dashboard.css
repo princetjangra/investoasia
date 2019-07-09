@@ -7,6 +7,9 @@ html,
       sans-serif;
 }
 
+.sidebar .logo img {
+   width: 60px;
+}
 .nav > li {
    width: 100%;
 }
