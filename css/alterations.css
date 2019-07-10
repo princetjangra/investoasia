@@ -9,12 +9,19 @@ body {
 .grey-text {
   color: #81878c;
 }
+.blue-text {
+  color: #1f7ae0;
+}
+.light-orange-text {
+  color: #e3af64;
+}
 .fs-24 {
   font-size: 24px;
 }
 .fw-5 {
   font-weight: 500;
 }
+
 .vdo {
   border-radius: 12px;
 }
@@ -276,6 +283,7 @@ div.hb p {
 .coin-about h3 {
   font-family: var(--fontPoppins);
   font-weight: 500;
+  font-size: 1.5rem;
 }
 .coin-about h4 {
   font-family: var(--fontPoppins);
@@ -303,13 +311,13 @@ div.hb p {
   font-size: 1.25rem;
   color: #535b6288;
 }
-.current-value h3 span {
+.current-value h5 span {
   /* color: rgba(25, 175, 85, 0.555); */
   color: #19af55;
-  font: 500 1.65rem "Segoe UI", Arial, sans-serif;
+  font: 500 1.4rem "Segoe UI", Arial, sans-serif;
 }
-.current-value h3 {
-  font: 400 1.5rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.current-value h5 {
+  font: 400 1.25rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Coin Content styles End */
@@ -321,6 +329,11 @@ div.hb p {
 }
 .stock-query {
   padding: 0 30px;
+}
+.stock-query p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  word-spacing: 0.1rem;
 }
 .min-invest {
   padding: 10px 30px;
@@ -342,6 +355,11 @@ div.hb p {
 }
 .min-invest button:first-of-type:hover {
   background-color: seagreen;
+}
+
+.btn-success {
+  background-color: #27bc94;
+  border: 1px solid #27bc94;
 }
 
 /* Stock Invest styles End */
@@ -367,7 +385,6 @@ div.hb p {
   font-weight: 300;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #ff7900;
 }
 .graph > div:first-child > p {
   color: #000;
@@ -477,7 +494,7 @@ div.hb p {
 
   .graph .graphContainer {
     padding-left: 15px;
-    margin-left: 15%;
+    margin-left: 4%;
     margin-right: 25%;
   }
   .graph > div:first-child {
@@ -505,7 +522,7 @@ div.hb p {
   }
   .graph .graphContainer {
     padding-left: 100px;
-    margin-left: 12%;
+    margin-left: 7%;
     margin-right: 29%;
   }
   .graph > div:first-child {
