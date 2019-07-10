@@ -1,0 +1,196 @@
+<div class="jumbotron rounded-0">
+         <!-- <h1 class="display-4">InvestoAsia!</h1> -->
+         <div class="row">
+            <div class="col-12 col-md-6">
+               <div class="text-center">
+                  <h3 class="stock-option">INDEX</h3>
+                  <!-- <hr class="my-4" /> -->
+                  <p class="stock-display">
+                     12900
+                     <span class="increasing-stock"
+                        ><i class="fas fa-caret-up"></i>+0.15%</span
+                     >
+                  </p>
+               </div>
+            </div>
+            <div class="col-12 col-md-6">
+               <div class="text-center">
+                  <h3 class="stock-option">CAGR</h3>
+                  <!-- <hr class="my-4" /> -->
+                  <p class="stock-display">
+                     <span class="increasing-stock">+0.15%</span>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="container pb-3">
+         <form>
+            <!-- <div class="form-group row"> -->
+
+            <div class="row  m-0 ">
+               <div class="form-group row col-12">
+                  <label
+                     for="investment-amount"
+                     class="col-sm-4 col-form-label text-sm-right"
+                     >Initial Investment:</label
+                  >
+                  <div class="input-group col-sm-7 col-md-5">
+                     <input
+                        type="number"
+                        class="form-control"
+                        id="investment-amount"
+                        placeholder="Enter amount to invest"
+                        aria-label="Enter amount to invest"
+                        aria-describedby="button-addon4"
+                        min="1000"
+                        value="1000"
+                        onchange="convert(this)"
+                     />
+
+                     <div class="input-group-append" id="button-addon4">
+                        <button
+                           class="btn btn-outline-secondary btn-height-38px"
+                           type="button"
+                           onclick="dec()"
+                        >
+                           <i class="fas fa-minus"></i>
+                        </button>
+                        <button
+                           class="btn btn-outline-secondary btn-height-38px"
+                           type="button"
+                           onclick="inc()"
+                        >
+                           <i class="fas fa-plus"></i>
+                        </button>
+                     </div>
+                     <div class="desc-text">Minimum amount: 1000</div>
+                     <div class="align-middle">
+                        <span id="no-of-tokens">0.8065</span> Tokens
+                     </div>
+
+                     <!-- <br /> -->
+                  </div>
+               </div>
+            </div>
+
+            <div class="row  m-0 ">
+               <div class="form-group row col-12">
+                  <label
+                     for="inputState"
+                     class="col-sm-4 col-form-label text-sm-right"
+                     >Frequency:</label
+                  >
+                  <div class="input-group col-sm-5">
+                     <select id="inputState" class="form-control">
+                        <option selected>3 Weeks</option>
+                        <option>15 Days</option>
+                        <option>Monthly</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row  m-0 ">
+               <div class="form-group row col-12">
+                  <label
+                     for="investment-amount"
+                     class="col-sm-4 col-form-label text-sm-right"
+                     >Installment Amount:</label
+                  >
+                  <div class="input-group col-sm-7 col-md-5">
+                     <input
+                        type="number"
+                        class="form-control col-12"
+                        id="investment-amount"
+                        placeholder="Enter amount to invest"
+                        aria-label="Enter amount to invest"
+                        aria-describedby="button-addon4"
+                        min="1000"
+                        value="1000"
+                        onchange="convert(this)"
+                     />
+
+                     <div class="input-group-append" id="button-addon4">
+                        <button
+                           class="btn btn-outline-secondary btn-height-38px"
+                           type="button"
+                           onclick="dec()"
+                        >
+                           <i class="fas fa-minus"></i>
+                        </button>
+                        <button
+                           class="btn btn-outline-secondary btn-height-38px"
+                           type="button"
+                           onclick="inc()"
+                        >
+                           <i class="fas fa-plus"></i>
+                        </button>
+                     </div>
+
+                     <!-- <br /> -->
+                     <!-- <div></div>  -->
+                     <div class="desc-text">Minimum amount: 1000</div>
+                     <div class="align-middle">
+                        <span id="no-of-tokens">0.8065</span> Tokens
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row  m-0 ">
+               <div class="form-group row col-12">
+                  <label
+                     for="investment-amount"
+                     class="col-sm-4 col-form-label text-sm-right"
+                     >Total Installments:</label
+                  >
+                  <div class="input-group col-sm-7 col-md-5">
+                     <input
+                        type="number"
+                        class="form-control col-12"
+                        id="investment-amount"
+                        placeholder="Enter amount to invest"
+                        aria-label="Enter amount to invest"
+                        aria-describedby="button-addon4"
+                        min="10"
+                        value="36"
+                        onchange="convert(this)"
+                     />
+
+                     <!-- <div class="input-group-append" id="button-addon4">
+                <button
+                  class="btn btn-outline-secondary btn-height-38px"
+                  type="button"
+                  onclick="dec()"
+                >
+                  <i class="fas fa-minus"></i>
+                </button>
+                <button
+                  class="btn btn-outline-secondary btn-height-38px"
+                  type="button"
+                  onclick="inc()"
+                >
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div> -->
+
+                     <!-- <br /> -->
+                     <!-- <div></div>  -->
+                     <!-- <div class="desc-text">Minimum amount: 1000</div>
+              <div class="align-middle">
+                <span id="no-of-tokens">0.8065</span> Tokens
+              </div> -->
+                  </div>
+               </div>
+            </div>
+
+            <!-- <input type="submit" class="btn btn-primary" /> -->
+            <div class="row m-0 text-center justify-content-center">
+               <button type="submit" class="btn btn-primary text-center">
+                  Start A Plan
+               </button>
+            </div>
+         </form>
+      </div>
