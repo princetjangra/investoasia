@@ -26,6 +26,18 @@ body {
   border-radius: 12px;
 }
 
+.feature {
+  display: block;
+  margin-top: 3.5%;
+  background: url(./../images/features-bg.png) top center / cover no-repeat;
+  width: 80%;
+  height: 493px;
+  margin-left: 10%;
+}
+.feature-responsive {
+  display: none;
+}
+
 .w3-container ul li {
   list-style: none;
   background-image: url(/images/icons/checked.png);
@@ -546,24 +558,59 @@ div.hb p {
   height: 90vh;
 }
 
-@media (max-width: 575px) {
-  .banner {
-    margin-top: 21%;
-    height: 36vh;
+@media (min-width: 320px) and (max-width: 426px) {
+  .feature {
+    display: none;
+  }
+  .feature-responsive {
+    display: block;
+  }
+  .feature-responsive img {
+    width: 80%;
+    margin-left: 12%;
   }
 }
-
-@media (max-width: 768px) {
+@media (min-width: 427px) and (max-width: 768px) {
   .banner {
     margin-top: 16%;
     height: 52vh;
   }
+  .feature {
+    display: none;
+  }
+  .feature-responsive {
+    display: block;
+  }
+  .feature-responsive img {
+    width: 65%;
+    margin-left: 20%;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 769px) and (max-width: 991px) {
   .banner {
     margin-top: 11.2%;
     height: 80vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .feature {
+    margin-top: 3.5%;
+    background: url(./../images/features-bg.png) top center / cover no-repeat;
+    width: 90%;
+    height: 374px;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .feature {
+    margin-top: 3.5%;
+    background: url(./../images/features-bg.png) top center / cover no-repeat;
+    width: 70%;
+    height: 409px;
+    margin-left: 15%;
   }
 }
 
