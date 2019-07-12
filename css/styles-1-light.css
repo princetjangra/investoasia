@@ -588,6 +588,8 @@ button:focus,
   /* padding-bottom: 4rem; */
   overflow: hidden;
   position: relative;
+  background: url("../images/bg-original.png");
+  background-size: cover;
 }
 .main-header .header-content,
 .main-header .row {
@@ -617,11 +619,14 @@ button:focus,
   margin: 1rem 0 3rem;
   max-width: 70%;
 }
+.main-header .header-left-side .growth-story {
+  white-space: nowrap;
+}
 .main-header .header-right-side {
   /* position: absolute; */
-  background: url("../images/bg2.png");
+  /* background: url("../images/bg-original.png");
   background-size: cover;
-  right: -120px;
+  right: -120px; */
   /* top: -5px; */
   /* width: 63%; */
   /* height: 70%; */
@@ -1787,6 +1792,9 @@ button:focus,
   .main-navbar .container .sign-up-btn {
     width: 100px;
   }
+  .main-header .header-left-side {
+    margin-left: 50px !important;
+  }
 }
 @media screen and (max-width: 1300px) {
   html {
@@ -2106,10 +2114,17 @@ button:focus,
     height: 110%;
     width: 90%;
   }
+  .main-header {
+    background: none;
+  }
   .main-header .header-right-side {
+    background: url(./../images/bg-original.png) center/cover no-repeat;
     height: 260px;
     right: 0;
     top: 0;
+  }
+  .main-header .header-left-side .growth-story {
+    white-space: unset;
   }
 }
 
