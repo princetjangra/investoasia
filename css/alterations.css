@@ -26,15 +26,13 @@ body {
   border-radius: 12px;
 }
 
-.feature {
+.main-projects .feature img {
   display: block;
   margin-top: 3.5%;
-  background: url(./../images/features-bg.png) top center / cover no-repeat;
   width: 80%;
-  height: 490px;
   margin-left: 10%;
 }
-.feature-responsive {
+.main-projects .feature-responsive {
   display: none;
 }
 
@@ -558,14 +556,14 @@ div.hb p {
   height: 90vh;
 }
 
-@media (min-width: 320px) and (max-width: 426px) {
-  .feature {
+@media (max-width: 426px) {
+  .main-projects .feature img {
     display: none;
   }
-  .feature-responsive {
+  .main-projects .feature-responsive {
     display: block;
   }
-  .feature-responsive img {
+  .main-projects .feature-responsive img {
     width: 80%;
     margin-left: 12%;
   }
@@ -575,13 +573,13 @@ div.hb p {
     margin-top: 16%;
     height: 52vh;
   }
-  .feature {
+  .main-projects .feature img {
     display: none;
   }
-  .feature-responsive {
+  .main-projects .feature-responsive {
     display: block;
   }
-  .feature-responsive img {
+  .main-projects .feature-responsive img {
     width: 65%;
     margin-left: 20%;
   }
@@ -591,26 +589,6 @@ div.hb p {
   .banner {
     margin-top: 11.2%;
     height: 80vh;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-  .feature {
-    margin-top: 3.5%;
-    background: url(./../images/features-bg.png) top center / cover no-repeat;
-    width: 90%;
-    height: 374px;
-    margin-left: 5%;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1440px) {
-  .feature {
-    margin-top: 3.5%;
-    background: url(./../images/features-bg.png) top center / cover no-repeat;
-    width: 70%;
-    height: 409px;
-    margin-left: 15%;
   }
 }
 
@@ -662,3 +640,16 @@ span.additional-subtitle.span-see-more {
 /* ------------------------------- */
 /*       About Us Page End         */
 /* ------------------------------- */
+
+/* MONICA */
+
+.contact img {
+  width: 100%;
+}
+
+.main-section {
+  padding-bottom: 0.5rem;
+}
+.main-contact .contact-container {
+  margin-bottom: 2rem;
+}
