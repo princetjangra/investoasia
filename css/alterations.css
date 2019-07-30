@@ -1,62 +1,62 @@
 :root {
-  --fontPoppins: "Poppins", "Segoe UI", "Arial", sans-serif;
-  --fontRaleway: "Raleway", "Arial", sans-serif;
+   --fontPoppins: "Poppins", "Segoe UI", "Arial", sans-serif;
+   --fontRaleway: "Raleway", "Arial", sans-serif;
 }
 
 body {
-  line-height: 1.5;
+   line-height: 1.5;
 }
 .grey-text {
-  color: #81878c;
+   color: #81878c;
 }
 .blue-text {
-  color: #1f7ae0;
+   color: #1f7ae0;
 }
 .light-orange-text {
-  color: #e3af64;
+   color: #e3af64;
 }
 .fs-24 {
-  font-size: 24px;
+   font-size: 24px;
 }
 .fw-5 {
-  font-weight: 500;
+   font-weight: 500;
 }
 
 .vdo {
-  border-radius: 12px;
+   border-radius: 12px;
 }
 
 .main-projects .feature img {
-  display: block;
-  margin-top: 3.5%;
-  width: 80%;
-  margin-left: 10%;
+   display: block;
+   margin-top: 3.5%;
+   width: 80%;
+   margin-left: 10%;
 }
 .main-projects .feature-responsive {
-  display: none;
+   display: none;
 }
 
 .w3-container ul li {
-  list-style: none;
-  background-image: url(/images/icons/checked.png);
-  background-repeat: no-repeat;
-  background-position: 1px 5px;
-  background-size: 30px;
-  padding-left: 40px;
-  line-height: 40px;
+   list-style: none;
+   background-image: url("./../images/icons/checked.png");
+   background-repeat: no-repeat;
+   background-position: 1px 5px;
+   background-size: 30px;
+   padding-left: 40px;
+   line-height: 40px;
 }
 
 .page-footer {
-  background-color: rgba(0, 140, 240, 0.5);
+   background-color: rgba(0, 140, 240, 0.5);
 }
 .footer-copyright {
-  background-color: #008cf0;
+   background-color: #008cf0;
 }
 
 .social i {
-  font-size: 30px;
-  padding: 30px 0 30px 0;
-  margin-right: 30px;
+   font-size: 30px;
+   padding: 30px 0 30px 0;
+   margin-right: 30px;
 }
 
 /* ------------------------------- */
@@ -64,8 +64,8 @@ body {
 /* ------------------------------- */
 
 .projects-container .feature h4 {
-  font-weight: 500;
-  font-family: var(--fontPoppins);
+   font-weight: 500;
+   font-family: var(--fontPoppins);
 }
 
 /* ------------------------------- */
@@ -77,47 +77,47 @@ body {
 /* ------------------------------- */
 
 .asia-map-container {
-  background: linear-gradient(
-    90deg,
-    rgba(255, 119, 0, 0.6),
-    rgba(255, 191, 0, 0.6)
-  );
-  /* z-index: -6; */
-  /* min-height: calc(100vh - (4.3vh)); */
+   background: linear-gradient(
+      90deg,
+      rgba(255, 119, 0, 0.6),
+      rgba(255, 191, 0, 0.6)
+   );
+   /* z-index: -6; */
+   /* min-height: calc(100vh - (4.3vh)); */
 }
 
 .home-map-container {
-  /* margin-top: -110px; */
+   /* margin-top: -110px; */
 }
 
 @media only screen and (max-width: 767px) {
-  .asia-map-container {
-    /* min-height: calc(100vh - (4.1vh)); */
-  }
+   .asia-map-container {
+      /* min-height: calc(100vh - (4.1vh)); */
+   }
 }
 
 .fullheight {
-  position: static;
-  height: auto;
+   position: static;
+   height: auto;
 }
 
 @media only screen and (min-width: 1200px) {
-  .fullheight {
-    position: relative;
-    height: 100%;
-  }
+   .fullheight {
+      position: relative;
+      height: 100%;
+   }
 }
 
 a:hover {
-  text-decoration: none;
+   text-decoration: none;
 }
 
 path {
-  fill: white;
+   fill: white;
 }
 
 #n-korea:hover {
-  fill: lightblue;
+   fill: lightblue;
 }
 
 #india:hover path,
@@ -132,14 +132,14 @@ path {
 #pak:hover path,
 #china:hover path,
 #vietnam:hover path {
-  /* fill: #d8edfd; */
-  fill: lightblue;
-  transition: fill 0.3s ease;
+   /* fill: #d8edfd; */
+   fill: lightblue;
+   transition: fill 0.3s ease;
 }
 
 .svg-map-hover:nth-child(2n) {
-  fill: lightblue;
-  transition: fill 0.3s ease;
+   fill: lightblue;
+   transition: fill 0.3s ease;
 }
 
 .india-hover-box,
@@ -154,113 +154,113 @@ path {
 .sri-lanka-hover-box,
 .korea-hover-box,
 .pak-hover-box {
-  /* display: none; */
-  visibility: hidden;
-  position: absolute;
-  height: 0;
-  transform: translate(0vw, -170%);
-  width: 175px;
-  background-color: #fff;
-  border-radius: 10px;
-  /* border-radius: 50%; */
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: all 0.5s;
-  /* , display 0.2s ease 0.5s; */
+   /* display: none; */
+   visibility: hidden;
+   position: absolute;
+   height: 0;
+   transform: translate(0vw, -170%);
+   width: 175px;
+   background-color: #fff;
+   border-radius: 10px;
+   /* border-radius: 50%; */
+   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   transition: all 0.5s;
+   /* , display 0.2s ease 0.5s; */
 }
 .india-hover-box {
-  transform: translate(28.2vw, -165%);
+   transform: translate(28.2vw, -165%);
 }
 
 .singapore-hover-box {
-  transform: translate(28vw, -102%);
+   transform: translate(28vw, -102%);
 }
 
 .indonesia-hover-box {
-  transform: translate(27vw, -100%);
+   transform: translate(27vw, -100%);
 }
 
 .hong-kong-hover-box {
-  transform: translate(47vw, -180%);
+   transform: translate(47vw, -180%);
 }
 
 .malaysia-hover-box {
-  transform: translate(27vw, -110%);
+   transform: translate(27vw, -110%);
 }
 
 .thailand-hover-box {
-  transform: translate(26vw, -140%);
+   transform: translate(26vw, -140%);
 }
 
 .philippines-hover-box {
-  transform: translate(52vw, -130%);
+   transform: translate(52vw, -130%);
 }
 
 .vietnam-hover-box {
-  transform: translate(29vw, -170%);
+   transform: translate(29vw, -170%);
 }
 
 .china-hover-box {
-  transform: translate(43vw, -225%);
+   transform: translate(43vw, -225%);
 }
 
 .sri-lanka-hover-box {
-  transform: translate(16vw, -120%);
+   transform: translate(16vw, -120%);
 }
 
 .korea-hover-box {
-  transform: translate(54vw, -240%);
+   transform: translate(54vw, -240%);
 }
 
 .pak-hover-box {
-  transform: translate(150px, -380px);
+   transform: translate(150px, -380px);
 }
 
 @media only screen and (max-width: 991px) {
-  .india-hover-box,
-  .singapore-hover-box,
-  .indonesia-hover-box,
-  .hong-kong-hover-box,
-  .malaysia-hover-box,
-  .thailand-hover-box,
-  .philippines-hover-box,
-  .vietnam-hover-box,
-  .china-hover-box,
-  .sri-lanka-hover-box,
-  .korea-hover-box,
-  .pak-hover-box {
-    visibility: hidden;
-    height: 0;
-    position: relative;
-    margin: 0 auto;
-    transform: none;
-    transition: 0.5s;
-  }
+   .india-hover-box,
+   .singapore-hover-box,
+   .indonesia-hover-box,
+   .hong-kong-hover-box,
+   .malaysia-hover-box,
+   .thailand-hover-box,
+   .philippines-hover-box,
+   .vietnam-hover-box,
+   .china-hover-box,
+   .sri-lanka-hover-box,
+   .korea-hover-box,
+   .pak-hover-box {
+      visibility: hidden;
+      height: 0;
+      position: relative;
+      margin: 0 auto;
+      transform: none;
+      transition: 0.5s;
+   }
 }
 
 div.map-hover {
-  /* display: block; */
-  padding: 1rem;
-  height: 200px;
-  transition: all 0.5s;
-  visibility: visible;
-  opacity: 1;
+   /* display: block; */
+   padding: 1rem;
+   height: 200px;
+   transition: all 0.5s;
+   visibility: visible;
+   opacity: 1;
 }
 div.map-hover h3,
 div.hb h3 {
-  margin: 0;
-  /* color: #fff; */
+   margin: 0;
+   /* color: #fff; */
 }
 
 div.hb p {
-  color: #008cf0;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin: 0;
+   color: #008cf0;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin: 0;
 }
 
 .fa-bitcoin {
-  color: #ffaca3;
+   color: #ffaca3;
 }
 
 /* ------------------------------- */
@@ -273,61 +273,61 @@ div.hb p {
 
 /* Coin Content styles Start  */
 .coin-image img {
-  height: auto;
-  width: 50%;
-  margin-left: 30px;
-  border-radius: 5px;
+   height: auto;
+   width: 50%;
+   margin-left: 30px;
+   border-radius: 5px;
 }
 
 .coin-content {
-  background-color: #535b620e;
-  margin-top: 40px;
-  padding-top: 50px;
-  padding-bottom: 40px;
-  border-radius: 10px;
+   background-color: #535b620e;
+   margin-top: 40px;
+   padding-top: 50px;
+   padding-bottom: 40px;
+   border-radius: 10px;
 }
 
 .coin-about {
-  margin-left: -9%;
+   margin-left: -9%;
 }
 .coin-about h3 {
-  font-family: var(--fontPoppins);
-  font-weight: 500;
-  font-size: 1.5rem;
+   font-family: var(--fontPoppins);
+   font-weight: 500;
+   font-size: 1.5rem;
 }
 .coin-about h4 {
-  font-family: var(--fontPoppins);
-  font-size: 1.2rem;
-  font-weight: normal;
+   font-family: var(--fontPoppins);
+   font-size: 1.2rem;
+   font-weight: normal;
 }
 .coin-about h6 {
-  display: inline-block;
-  background-color: #e7e7e7;
-  color: #666;
-  padding: 3px 6px;
-  border-radius: 2px;
-  /* font-family: var(--fontPoppins); */
-  font-weight: 300;
-  font-size: 0.75rem;
+   display: inline-block;
+   background-color: #e7e7e7;
+   color: #666;
+   padding: 3px 6px;
+   border-radius: 2px;
+   /* font-family: var(--fontPoppins); */
+   font-weight: 300;
+   font-size: 0.75rem;
 }
 .current-value {
-  /* transform: translate(90%, 0); */
+   /* transform: translate(90%, 0); */
 }
 .current-value,
 .min-invest h5 {
-  text-transform: uppercase;
-  font-family: var(--fontPoppins);
-  font-weight: 200;
-  font-size: 1.25rem;
-  color: #535b6288;
+   text-transform: uppercase;
+   font-family: var(--fontPoppins);
+   font-weight: 200;
+   font-size: 1.25rem;
+   color: #535b6288;
 }
 .current-value h5 span {
-  /* color: rgba(25, 175, 85, 0.555); */
-  color: #19af55;
-  font: 500 1.4rem "Segoe UI", Arial, sans-serif;
+   /* color: rgba(25, 175, 85, 0.555); */
+   color: #19af55;
+   font: 500 1.4rem "Segoe UI", Arial, sans-serif;
 }
 .current-value h5 {
-  font: 400 1.25rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+   font: 400 1.25rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Coin Content styles End */
@@ -335,41 +335,41 @@ div.hb p {
 /* Stock Invest styles Start */
 
 .stock-invest {
-  padding-top: 30px;
+   padding-top: 30px;
 }
 .stock-query {
-  padding: 0 30px;
+   padding: 0 30px;
 }
 .stock-query p {
-  font-size: 0.9rem;
-  line-height: 1.8;
-  word-spacing: 0.1rem;
+   font-size: 0.9rem;
+   line-height: 1.8;
+   word-spacing: 0.1rem;
 }
 .min-invest {
-  padding: 10px 30px;
+   padding: 10px 30px;
 }
 .min-invest p {
-  display: inline-block;
-  font: 1.5em sans-serif;
-  margin-right: 0.7em;
+   display: inline-block;
+   font: 1.5em sans-serif;
+   margin-right: 0.7em;
 }
 .min-invest button:first-of-type {
-  padding: 5px 10px;
-  font: 500 1.25rem sans-serif;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.856);
-  background-color: #19af55;
-  transition: 0.3s;
+   padding: 5px 10px;
+   font: 500 1.25rem sans-serif;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+   color: rgba(255, 255, 255, 0.856);
+   background-color: #19af55;
+   transition: 0.3s;
 }
 .min-invest button:first-of-type:hover {
-  background-color: seagreen;
+   background-color: seagreen;
 }
 
 .btn-success {
-  background-color: #27bc94;
-  border: 1px solid #27bc94;
+   background-color: #27bc94;
+   border: 1px solid #27bc94;
 }
 
 /* Stock Invest styles End */
@@ -379,166 +379,166 @@ div.hb p {
 /* Style the tab */
 
 .graph {
-  padding-top: 30px;
-  margin-bottom: 120px;
+   padding-top: 30px;
+   margin-bottom: 120px;
 }
 .graph > div:first-child {
-  margin-left: 12%;
+   margin-left: 12%;
 }
 @media (min-width: 992px) {
-  .graph > div:first-child > p {
-    width: 300px;
-  }
+   .graph > div:first-child > p {
+      width: 300px;
+   }
 }
 .graph .stock-options-group > div > span {
-  /* font-family: var(--fontRaleway); */
-  font-weight: 300;
-  font-size: 0.8rem;
-  text-transform: uppercase;
+   /* font-family: var(--fontRaleway); */
+   font-weight: 300;
+   font-size: 0.8rem;
+   text-transform: uppercase;
 }
 .graph > div:first-child > p {
-  color: #000;
-  font-weight: 500;
+   color: #000;
+   font-weight: 500;
 }
 .graph .increasing-stock {
-  color: #19af55;
-  font-weight: 500;
-  font-size: 1.2rem;
-  font-family: "Segoe UI", Arial, sans-serif;
+   color: #19af55;
+   font-weight: 500;
+   font-size: 1.2rem;
+   font-family: "Segoe UI", Arial, sans-serif;
 }
 .graph .tab {
-  overflow: hidden;
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
+   overflow: hidden;
+   width: 70%;
+   display: flex;
+   justify-content: flex-end;
 }
 /* Style the buttons inside the tab */
 .graph .tab button {
-  background-color: inherit;
-  float: left;
-  border: 1px solid rgba(0, 0, 0, 0.158);
-  outline: none;
-  cursor: pointer;
-  padding: 5px 8px;
-  transition: 0.3s;
-  font-size: 14px;
+   background-color: inherit;
+   float: left;
+   border: 1px solid rgba(0, 0, 0, 0.158);
+   outline: none;
+   cursor: pointer;
+   padding: 5px 8px;
+   transition: 0.3s;
+   font-size: 14px;
 }
 .tab button:nth-child(-n + 3) {
-  border-right: 0;
+   border-right: 0;
 }
 .left-radius {
-  border-radius: 3px 0 0 3px;
+   border-radius: 3px 0 0 3px;
 }
 
 .right-radius {
-  border-radius: 0 3px 3px 0;
+   border-radius: 0 3px 3px 0;
 }
 /* Change background color of buttons on hover */
 .graph .tab button:hover {
-  color: #3a49c9;
+   color: #3a49c9;
 }
 /* Create an active/current tablink class */
 .graph .tab button.active {
-  color: #3a49c9;
-  background-color: gainsboro;
+   color: #3a49c9;
+   background-color: gainsboro;
 }
 
 /* Style the tab content */
 .graph .tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border-top: none;
+   display: none;
+   padding: 6px 12px;
+   border-top: none;
 }
 
 .graph .graphContainer {
-  background-color: #535b620e;
-  border-radius: 10px;
+   background-color: #535b620e;
+   border-radius: 10px;
 }
 
 @media (min-width: 300px) {
-  .graph .graphContainer {
-    margin-left: 2%;
-    margin-right: 3%;
-  }
-  .graph > div:first-child {
-    margin-left: 3%;
-  }
+   .graph .graphContainer {
+      margin-left: 2%;
+      margin-right: 3%;
+   }
+   .graph > div:first-child {
+      margin-left: 3%;
+   }
 }
 
 @media (min-width: 576px) {
-  .graph .graphContainer {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .graph > div:first-child {
-    margin-right: 10%;
-    margin-left: 10%;
-  }
+   .graph .graphContainer {
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+   .graph > div:first-child {
+      margin-right: 10%;
+      margin-left: 10%;
+   }
 }
 
 @media (min-width: 768px) {
-  .setChart {
-    width: 500px;
-    height: 430px;
-  }
+   .setChart {
+      width: 500px;
+      height: 430px;
+   }
 
-  .graph .graphContainer {
-    padding-left: 15px;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .graph > div:first-child {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-  .graph > div:first-child > p {
-    width: 250px;
-  }
+   .graph .graphContainer {
+      padding-left: 15px;
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+   .graph > div:first-child {
+      margin-left: 10%;
+      margin-right: 10%;
+   }
+   .graph > div:first-child > p {
+      width: 250px;
+   }
 }
 
 @media (min-width: 768px) {
-  .setChart {
-    width: 500px;
-    height: 420px;
-  }
+   .setChart {
+      width: 500px;
+      height: 420px;
+   }
 
-  .graph .graphContainer {
-    padding-left: 15px;
-    margin-left: 4%;
-    margin-right: 25%;
-  }
-  .graph > div:first-child {
-    margin-left: 15%;
-    margin-right: 0%;
-  }
+   .graph .graphContainer {
+      padding-left: 15px;
+      margin-left: 4%;
+      margin-right: 25%;
+   }
+   .graph > div:first-child {
+      margin-left: 15%;
+      margin-right: 0%;
+   }
 }
 
 @media (min-width: 1024px) {
-  .setChart {
-    width: 500px;
-    height: 430px;
-  }
-  .graph .graphContainer {
-    padding-left: 80px;
-    margin-left: 8%;
-    margin-right: 29%;
-  }
+   .setChart {
+      width: 500px;
+      height: 430px;
+   }
+   .graph .graphContainer {
+      padding-left: 80px;
+      margin-left: 8%;
+      margin-right: 29%;
+   }
 }
 
 @media (min-width: 1200px) {
-  .setChart {
-    width: 500px;
-    height: 450px;
-  }
-  .graph .graphContainer {
-    padding-left: 100px;
-    margin-left: 7%;
-    margin-right: 29%;
-  }
-  .graph > div:first-child {
-    margin-left: 12%;
-    margin-right: 29%;
-  }
+   .setChart {
+      width: 500px;
+      height: 450px;
+   }
+   .graph .graphContainer {
+      padding-left: 100px;
+      margin-left: 7%;
+      margin-right: 29%;
+   }
+   .graph > div:first-child {
+      margin-left: 12%;
+      margin-right: 29%;
+   }
 }
 
 /* ------------------------------- */
@@ -550,91 +550,91 @@ div.hb p {
 /* ------------------------------- */
 
 .banner {
-  margin-top: 5.5%;
-  background: url("./../images/about-banner.jpg") top center / cover no-repeat;
-  width: 100%;
-  height: 90vh;
+   margin-top: 5.5%;
+   background: url("./../images/about-banner.jpg") top center / cover no-repeat;
+   width: 100%;
+   height: 90vh;
 }
 
 @media (max-width: 426px) {
-  .main-projects .feature img {
-    display: none;
-  }
-  .main-projects .feature-responsive {
-    display: block;
-  }
-  .main-projects .feature-responsive img {
-    width: 80%;
-    margin-left: 12%;
-  }
+   .main-projects .feature img {
+      display: none;
+   }
+   .main-projects .feature-responsive {
+      display: block;
+   }
+   .main-projects .feature-responsive img {
+      width: 80%;
+      margin-left: 12%;
+   }
 }
 @media (min-width: 427px) and (max-width: 768px) {
-  .banner {
-    margin-top: 16%;
-    height: 52vh;
-  }
-  .main-projects .feature img {
-    display: none;
-  }
-  .main-projects .feature-responsive {
-    display: block;
-  }
-  .main-projects .feature-responsive img {
-    width: 65%;
-    margin-left: 20%;
-  }
+   .banner {
+      margin-top: 16%;
+      height: 52vh;
+   }
+   .main-projects .feature img {
+      display: none;
+   }
+   .main-projects .feature-responsive {
+      display: block;
+   }
+   .main-projects .feature-responsive img {
+      width: 65%;
+      margin-left: 20%;
+   }
 }
 
 @media (min-width: 769px) and (max-width: 991px) {
-  .banner {
-    margin-top: 11.2%;
-    height: 80vh;
-  }
+   .banner {
+      margin-top: 11.2%;
+      height: 80vh;
+   }
 }
 
 #moreMessage {
-  display: none;
+   display: none;
 }
 
 .additional-title {
-  font: normal 700 2.25rem/1.2 "Poppins", sans-serif;
-  color: #333;
-  letter-spacing: -0.025em;
+   font: normal 700 2.25rem/1.2 "Poppins", sans-serif;
+   color: #333;
+   letter-spacing: -0.025em;
 }
 
 @media only screen and (min-width: 768px) {
-  .additional-title {
-    font-size: 2.5rem;
-  }
+   .additional-title {
+      font-size: 2.5rem;
+   }
 }
 
 .section-title p {
-  display: block;
-  /* margin: 1.4rem 0 0 0.2rem; */
+   display: block;
+   /* margin: 1.4rem 0 0 0.2rem; */
 }
 
 .section-title .row p {
-  font-size: 1rem;
+   font-size: 1rem;
 }
 
 .section-title p.additional-title,
 .section-title p.additional-subtitle {
-  /* margin: 0; */
+   /* margin: 0; */
 }
 
 .section-title .btn-holder {
-  position: relative;
-  text-align: left;
-  margin: 4.2rem 0 0 0.2rem;
+   position: relative;
+   text-align: left;
+   margin: 4.2rem 0 0 0.2rem;
 }
 
 .section-title .btn-holder.centered {
-  text-align: center;
+   text-align: center;
 }
 
 span.additional-subtitle.span-see-more {
-  font-weight: bold;
-  cursor: pointer;
+   font-weight: bold;
+   cursor: pointer;
 }
 
 /* ------------------------------- */
@@ -644,12 +644,12 @@ span.additional-subtitle.span-see-more {
 /* MONICA */
 
 .contact img {
-  width: 100%;
+   width: 100%;
 }
 
 .main-section {
-  padding-bottom: 0.5rem;
+   padding-bottom: 0.5rem;
 }
 .main-contact .contact-container {
-  margin-bottom: 2rem;
+   margin-bottom: 2rem;
 }
