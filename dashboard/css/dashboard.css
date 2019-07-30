@@ -1,181 +1,200 @@
 body,
 html,
 * {
-  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
-  font-family: "Open Sans", "Poppins", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+   font-family: "Open Sans", "Poppins", "Segoe UI", Tahoma, Geneva, Verdana,
+      sans-serif;
 }
 
+/* ------------------------------- */
+/*          Dashboard Page         */
+/* ------------------------------- */
+
 .sidebar .logo img {
-  width: 60px;
+   width: 80px;
 }
 .nav > li {
-  width: 100%;
+   width: 100%;
 }
 
 .nav > li a {
-  padding: 10px 15px;
+   padding: 10px 15px;
 }
 
 .nav li a:hover {
-  text-decoration: none;
+   text-decoration: none;
+}
+
+li.nav-item a.nav-link.logout {
+   color: #535b62;
+   border: 1px solid rgba(189, 195, 203, 0.7);
+   border-radius: 6px;
+   padding: 7px 12px;
+   font-size: 14px;
+}
+li.nav-item a.nav-link.logout:hover,
+li.nav-item a.nav-link.logout:focus,
+li.nav-item a.nav-link.logout:active {
+   border-color: #1dc7ea;
 }
 
 .collapse:not(.show) {
-  display: inline-block;
+   display: inline-block;
 }
 
 @media (min-width: 991px) {
-  .navbar-toggler {
-    display: none;
-  }
+   .navbar-toggler {
+      display: none;
+   }
 }
 
 .stat-container > img {
-  display: block;
+   display: block;
 }
 
 .stat-parent-container {
-  /* width: 100%; */
-  padding: 1rem 0.25rem;
-  margin-top: 1.5rem;
+   /* width: 100%; */
+   padding: 1rem 0.25rem;
+   margin-top: 1.5rem;
 }
 
 .my-auto {
-  margin: 0 auto;
+   margin: 0 auto;
 }
 
 .stat-parent-container > div:nth-child(2) {
-  margin-top: 2rem;
+   margin-top: 2rem;
 }
 
 .stat-parent-container > div:first-child div:last-child {
-  padding: 4.75rem 0;
+   padding: 4.75rem 0;
 }
 
 .stat-parent-container button {
-  color: #ffffff;
-  background-color: #9570d6;
-  border: none;
+   color: #ffffff;
+   background-color: #9570d6;
+   border: none;
 }
 
 .stat-parent-container button:hover {
-  color: #ffffff;
-  background-color: #9570d6;
+   color: #ffffff;
+   background-color: #9570d6;
 }
 
 .stat-container {
-  font-size: 1.15em;
+   font-size: 1.15em;
 }
 .stat-container p {
-  font-size: 1.05rem;
+   font-size: 1.05rem;
 }
 
 .stat-container > h3 {
-  /* color: #424242; */
-  color: #2f363f;
-  font-family: "Segoe UI", "Open Sans", Arial, sans-serif;
-  font-weight: 400;
+   /* color: #424242; */
+   color: #2f363f;
+   font-family: "Segoe UI", "Open Sans", Arial, sans-serif;
+   font-weight: 400;
 }
 
 .stat-container:nth-child(-n + 3) b {
-  color: #2f363f;
-  /* font-size: 1.25rem; */
-  font: 500 1.25rem "Segoe UI", "Open Sans", Arial, sans-serif;
+   color: #2f363f;
+   /* font-size: 1.25rem; */
+   font: 500 1.25rem "Segoe UI", "Open Sans", Arial, sans-serif;
 }
 
 .bg-grey {
-  background: linear-gradient(90deg, #008cf033, #ffffff);
-  border-radius: 4px;
+   /* background: linear-gradient(90deg, #008cf033, #ffffff); */
+   background-color: rgba(0, 140, 240, 0.2);
+   border-radius: 4px;
 }
 
 div#button-addon4 > button.btn-outline-secondary {
-  line-height: 0;
+   line-height: 0;
 }
 
 .btn-height-38px {
-  height: 38px;
+   height: 38px;
 }
 
 #no-of-tokens {
-  font-size: 1.25rem;
-  font-family: Poppins, Segoe UI;
-  font-weight: bold;
-  color: ForestGreen;
+   font-size: 1.25rem;
+   font-family: Poppins, Segoe UI, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   color: #19af55;
 }
 
 .order-list-stock {
-  background-color: #b4cfb4;
+   background-color: #f9fafb;
+   border-radius: 6px;
 }
 
 .order-list-stock div div:nth-child(2) {
-  font-weight: bold;
+   font-weight: bold;
 }
 
 .fund-name i {
-  cursor: pointer;
-  color: crimson;
+   cursor: pointer;
+   color: crimson;
 }
 
 .increasing-stock {
-  color: #19af55;
-  font-size: 1.5rem;
-  font-weight: 300;
+   color: #19af55;
+   font-size: 1.5rem;
+   font-weight: 300;
 }
 
 /* CSS for Holdings page ---------- */
 
 .holdings .headTag {
-  font-size: 30px;
-  /* border-radius: 5px; */
-  /* background: linear-gradient(90deg, #ffbf008e, #ff77008f); */
-  background: linear-gradient(90deg, #008cf033, #ffffff);
+   font-size: 30px;
+   /* border-radius: 5px; */
+   /* background: linear-gradient(90deg, #ffbf008e, #ff77008f); */
+   background: linear-gradient(90deg, #008cf033, #ffffff);
 }
 .holdings .headTag {
-  padding: 1.25rem;
+   padding: 1.25rem;
 }
 .headTag > h3 {
-  text-transform: uppercase;
-  font-weight: 600;
+   text-transform: uppercase;
+   font-weight: 600;
 }
 
 .headTag > div {
-  font-size: 1rem;
-  font-weight: 100;
+   font-size: 1rem;
+   font-weight: 100;
 }
 .headTag div:nth-child(2) {
-  padding: 1.25rem;
+   padding: 1.25rem;
 }
 .fw-4 {
-  font-weight: 400 !important;
+   font-weight: 400 !important;
 }
 .fw-5 {
-  font-weight: 500 !important;
+   font-weight: 500 !important;
 }
 .fw-6 {
-  font-weight: 600 !important;
+   font-weight: 600 !important;
 }
 .green-text {
-  color: #09863b !important;
+   color: #09863b !important;
 }
 .headTag > div span {
-  font-size: 1.75rem;
-  font-weight: 400;
-  /* color: #19af55d0; */
-  font-family: "Segoe UI", Arial, sans-serif;
+   font-size: 1.75rem;
+   font-weight: 400;
+   /* color: #19af55d0; */
+   font-family: "Segoe UI", Arial, sans-serif;
 }
 
 table td button {
-  min-width: 112px;
+   min-width: 112px;
 }
 
 .holdings-table thead tr th:nth-child(n + 2) {
-  padding-right: 50px;
+   padding-right: 50px;
 }
 
 .holdings-table thead tr th:nth-child(4) {
-  padding-right: 20px;
+   padding-right: 20px;
 }
 
 /* ---------- CSS for Holdings page */
@@ -183,162 +202,162 @@ table td button {
 /* Payment & Redeem Page CSS -------------- */
 
 .btn-success:hover {
-  background-color: seagreen;
-  color: white;
+   background-color: seagreen;
+   color: white;
 }
 
 .btn-warning {
-  color: white;
-  /* background-color: #ffa434; */
+   color: white;
+   /* background-color: #ffa434; */
 }
 .btn-warning:hover {
-  color: white;
-  background-color: #ff7128;
+   color: white;
+   background-color: #ff7128;
 }
 
 .btn-danger:hover {
-  color: white;
-  background-color: crimson;
+   color: white;
+   background-color: crimson;
 }
 
 .payment-container {
-  max-width: 60%;
+   max-width: 60%;
 }
 
 .tabcontent {
-  height: 80%;
-  /* width: 50%; */
-  /* margin-left: 25%; */
-  margin-top: 5%;
-  padding: 30px 30px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #ffbf007a, #ff77007a);
+   height: 80%;
+   /* width: 50%; */
+   /* margin-left: 25%; */
+   margin-top: 5%;
+   padding: 30px 30px;
+   border-radius: 10px;
+   background: linear-gradient(90deg, #ffbf007a, #ff77007a);
 }
 
 .tabcontent .btn-content {
-  padding-top: 100px;
-  text-align: center;
+   padding-top: 100px;
+   text-align: center;
 }
 .tabcontent .btn-content p {
-  font-size: 20px;
-  color: limegreen;
+   font-size: 20px;
+   color: #19af55;
 }
 
 .btns {
-  height: 275px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   height: 275px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .input-group-append {
-  height: 38px;
+   height: 38px;
 }
 
 .tabcontent div div {
-  font-family: Poppins, Segoe UI, Arial;
+   font-family: Poppins, Segoe UI, Arial;
 }
 
 .amount-converted span {
-  font-weight: bold;
+   font-weight: bold;
 }
 
 .footer {
-  position: absolute;
-  width: 100%;
+   position: absolute;
+   width: 100%;
 }
 
 @media (max-width: 768px) {
-  .payment-container {
-    max-width: 85%;
-  }
+   .payment-container {
+      max-width: 85%;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .payment-container {
-    max-width: 75%;
-  }
+   .payment-container {
+      max-width: 75%;
+   }
 }
 
 /* -------------- Payment & Redeem Page CSS */
 
 /* map css start */
 .asia-map-container {
-  /* margin-top: -200px !important; */
+   /* margin-top: -200px !important; */
 }
 
 @media (max-width: 767px) {
-  .asia-map-container {
-    /* margin-top: -30px !important; */
-  }
-  .payment-container {
-    max-width: 90%;
-  }
+   .asia-map-container {
+      /* margin-top: -30px !important; */
+   }
+   .payment-container {
+      max-width: 90%;
+   }
 
-  .tabcontent {
-    height: 10%;
-    /* width: 60%; */
-    margin-top: 5%;
-    /* padding: 10px 8px; */
-    border-radius: 10px;
-    background-color: rgba(216, 191, 216, 0.767);
-  }
-  .tabcontent h3 {
-    font-size: 2rem;
-    /* font-weight: 500; */
-    padding-bottom: 10px;
-  }
-  .tabcontent .btn-content {
-    padding-top: 50px;
-    text-align: center;
-  }
+   .tabcontent {
+      height: 10%;
+      /* width: 60%; */
+      margin-top: 5%;
+      /* padding: 10px 8px; */
+      border-radius: 10px;
+      background-color: rgba(216, 191, 216, 0.767);
+   }
+   .tabcontent h3 {
+      font-size: 2rem;
+      /* font-weight: 500; */
+      padding-bottom: 10px;
+   }
+   .tabcontent .btn-content {
+      padding-top: 50px;
+      text-align: center;
+   }
 
-  .tabcontent .btn-content p {
-    font-size: 14px;
-    font-weight: 500;
-    color: limegreen;
-  }
+   .tabcontent .btn-content p {
+      font-size: 14px;
+      font-weight: 500;
+      color: limegreen;
+   }
 
-  .btns .btn {
-    font-size: 22px;
-    /* margin-top: -150px; */
-    /* margin-left: 50px; */
-  }
+   .btns .btn {
+      font-size: 22px;
+      /* margin-top: -150px; */
+      /* margin-left: 50px; */
+   }
 
-  .holdings-table {
-    /* margin-top: -200px; */
-  }
+   .holdings-table {
+      /* margin-top: -200px; */
+   }
 
-  /* .btn {
+   /* .btn {
     padding: 2px 8px;
     font-size: 13;
   } */
-  .btn-content img {
-    height: 25px;
-    width: 25px;
-  }
-  .custom-select {
-    font-size: 11px;
-  }
+   .btn-content img {
+      height: 25px;
+      width: 25px;
+   }
+   .custom-select {
+      font-size: 11px;
+   }
 
-  .input-group-append {
-    font-size: 11px;
-    height: 30px;
-  }
+   .input-group-append {
+      font-size: 11px;
+      height: 30px;
+   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .asia-map-container {
-    /* margin-top: -200px !important; */
-  }
-  .holdings {
-    /* margin-left: 500px; */
-  }
+   .asia-map-container {
+      /* margin-top: -200px !important; */
+   }
+   .holdings {
+      /* margin-left: 500px; */
+   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  .asia-map-container {
-    /* margin-top: -160px !important; */
-  }
+   .asia-map-container {
+      /* margin-top: -160px !important; */
+   }
 }
 /* map css end */

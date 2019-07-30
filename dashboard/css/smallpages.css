@@ -1,9 +1,11 @@
 h2 {
-   /* font: 1.5rem 500 Poppins, "Segoe UI", sans-serif; */
+   font-weight: 400;
+   /* font-family: Poppins, "Segoe UI", sans-serif !important; */
 }
 
 :root {
    --fontPoppins: Poppins, Segoe UI, Arial;
+   --fontSegoe: Segoe UI, Arial, Helvetica, sans-serif;
 }
 
 .jumbotron {
@@ -32,8 +34,8 @@ button.btn-height-38px {
 
 #no-of-tokens {
    font-size: 1.25rem;
-   font-family: var(--fontPoppins);
-   font-weight: 600;
+   font-family: var(--fontSegoe);
+   font-weight: 500;
    color: #19af55;
 }
 

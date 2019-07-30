@@ -374,7 +374,7 @@ input:focus {
 }
 
 .sidebar .logo {
-    padding: 10px 15px;
+    padding: 0px 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -560,7 +560,7 @@ input:focus {
 .open > .btn.dropdown-toggle {
     background-color: transparent;
     color: #777777;
-    border-color: #777777;
+    /* border-color: #777777; */
 }
 
 .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn:disabled, .btn:disabled:hover, .btn:disabled:focus, .btn:disabled.focus, .btn:disabled:active, .btn:disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active,
@@ -1859,7 +1859,7 @@ fieldset[disabled] .btn-neutral.active {
 .navbar-default .navbar-nav > li > a:not(.btn):hover,
 .navbar-default .navbar-nav > li > a:not(.btn):focus {
     background-color: transparent;
-    border-radius: 3px;
+    border-radius: 6px;
     color: #1DC7EA;
     opacity: 1;
     filter: alpha(opacity=100);
@@ -2410,7 +2410,7 @@ fieldset[disabled] .btn-neutral.active {
 }
 
 .card-user .content {
-    min-height: 240px;
+    /* min-height: 240px; */
 }
 
 .card-user .footer,
