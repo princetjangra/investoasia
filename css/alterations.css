@@ -77,11 +77,12 @@ body {
 /* ------------------------------- */
 
 .asia-map-container {
-   background: linear-gradient(
+   /* background: linear-gradient(
       90deg,
       rgba(255, 119, 0, 0.6),
       rgba(255, 191, 0, 0.6)
-   );
+   ); */
+   background-color: #bdcfdb;
    /* z-index: -6; */
    /* min-height: calc(100vh - (4.3vh)); */
 }
@@ -159,7 +160,7 @@ path {
    position: absolute;
    height: 0;
    transform: translate(0vw, -170%);
-   width: 175px;
+   width: 180px;
    background-color: #fff;
    border-radius: 10px;
    /* border-radius: 50%; */
@@ -241,7 +242,7 @@ path {
 div.map-hover {
    /* display: block; */
    padding: 1rem;
-   height: 200px;
+   height: 210px;
    transition: all 0.5s;
    visibility: visible;
    opacity: 1;
@@ -250,6 +251,10 @@ div.map-hover h3,
 div.hb h3 {
    margin: 0;
    /* color: #fff; */
+   font-size: 0.9rem;
+   font-weight: 500;
+   text-align: center;
+   margin-bottom: 0.5rem;
 }
 
 div.hb p {
@@ -257,6 +262,7 @@ div.hb p {
    text-transform: uppercase;
    font-weight: bold;
    margin: 0;
+   margin-bottom: 0.7rem;
 }
 
 .fa-bitcoin {
@@ -280,9 +286,10 @@ div.hb p {
 }
 
 .coin-content {
-   background-color: #535b620e;
+   /* background-color: #535b620e; */
+   background-color: #f9fafb;
    margin-top: 40px;
-   padding-top: 50px;
+   padding-top: 40px;
    padding-bottom: 40px;
    border-radius: 10px;
 }
@@ -315,7 +322,7 @@ div.hb p {
 }
 .current-value,
 .min-invest h5 {
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
    font-family: var(--fontPoppins);
    font-weight: 200;
    font-size: 1.25rem;
@@ -324,7 +331,9 @@ div.hb p {
 .current-value h5 span {
    /* color: rgba(25, 175, 85, 0.555); */
    color: #19af55;
-   font: 500 1.4rem "Segoe UI", Arial, sans-serif;
+   /* font: 500 1.4rem "Segoe UI", Arial, sans-serif; */
+   font-weight: 400;
+   font-size: 1rem;
 }
 .current-value h5 {
    font: 400 1.25rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -364,7 +373,7 @@ div.hb p {
    transition: 0.3s;
 }
 .min-invest button:first-of-type:hover {
-   background-color: seagreen;
+   background-color: #27bc94;
 }
 
 .btn-success {
@@ -394,7 +403,7 @@ div.hb p {
    /* font-family: var(--fontRaleway); */
    font-weight: 300;
    font-size: 0.8rem;
-   text-transform: uppercase;
+   /* text-transform: uppercase; */
 }
 .graph > div:first-child > p {
    color: #000;
@@ -402,7 +411,7 @@ div.hb p {
 }
 .graph .increasing-stock {
    color: #19af55;
-   font-weight: 500;
+   font-weight: 400;
    font-size: 1.2rem;
    font-family: "Segoe UI", Arial, sans-serif;
 }
@@ -440,7 +449,7 @@ div.hb p {
 /* Create an active/current tablink class */
 .graph .tab button.active {
    color: #3a49c9;
-   background-color: gainsboro;
+   background-color: #e8e8e8;
 }
 
 /* Style the tab content */
@@ -451,7 +460,7 @@ div.hb p {
 }
 
 .graph .graphContainer {
-   background-color: #535b620e;
+   background-color: white;
    border-radius: 10px;
 }
 
@@ -592,10 +601,6 @@ div.hb p {
    }
 }
 
-#moreMessage {
-   display: none;
-}
-
 .additional-title {
    font: normal 700 2.25rem/1.2 "Poppins", sans-serif;
    color: #333;
@@ -635,6 +640,87 @@ div.hb p {
 span.additional-subtitle.span-see-more {
    font-weight: bold;
    cursor: pointer;
+}
+
+/* More Message Modal */
+
+#myImg {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+#myImg:hover {
+   opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 1; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0); /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 1100px;
+}
+
+/* Caption of Modal Image */
+#caption {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+   from {
+      -webkit-transform: scale(0);
+   }
+   to {
+      -webkit-transform: scale(1);
+   }
+}
+
+@keyframes zoom {
+   from {
+      transform: scale(0);
+   }
+   to {
+      transform: scale(1);
+   }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+   .modal-content {
+      width: 100%;
+   }
 }
 
 /* ------------------------------- */
