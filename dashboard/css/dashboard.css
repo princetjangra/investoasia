@@ -213,7 +213,6 @@ table td button {
 .btn-warning:hover {
    color: white;
    background-color: #ff7128;
-   border-color: #ff7128;
 }
 
 .btn-danger:hover {

@@ -547,44 +547,10 @@ pak_hb.hover(() => {
 
 // Message from CEO ----------
 
-// function seeMoreMessage(e) {
-//   var moreMessage = $("#moreMessage");
-//   moreMessage.slideToggle("slow");
-//   $(e).text($(e).text() == "see more ..." ? "hide text" : "see more ...");
-// }
+function seeMoreMessage(e) {
+  var moreMessage = $("#moreMessage");
+  moreMessage.slideToggle("slow");
+  $(e).text($(e).text() == "see more ..." ? "hide text" : "see more ...");
+}
 
 // -------- Message form CEO
-
-
-// -------- Modal
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = $(".myImg1");
-var moreMessage = $("#moreMessage");
-var captionText = document.getElementById("caption");
-$(".myImg1").click(function() {
-   modal.style.display = "block";
-   var newSrc = this.src;
-   moreMessage.attr("src", newSrc);
-   captionText.innerHTML = this.alt;
-});
-
-// Closing modal
-$("#myModal").on("click", function(e) {
-  var p = e.target;
-  while (p) {
-     console.log(p);
-     if (p.id) {
-        if (p.id == "img01") {
-           return;
-        }
-     }
-     p = p.parentElement;
-  }
-  modal.style.display = "none";
-  // $("#openModal").hide();
-});
-
