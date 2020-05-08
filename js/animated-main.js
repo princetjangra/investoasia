@@ -1,22 +1,22 @@
 /**
  * demo.js
- * http://www.codrops.com
+ * https//www.codrops.com
  *
  * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
+ * https//www.opensource.org/licenses/mit-license.php
  *
  * Copyright 2017, Codrops
- * http://www.codrops.com
+ * https//www.codrops.com
  */
 
-if (document.querySelector('#eclipse-scene')) {
-    var canvas = document.querySelector('#eclipse-scene');
-    var width = document.querySelector('.main-header').offsetWidth,
-        height = document.querySelector('.main-header').offsetHeight;
+if (document.querySelector("#eclipse-scene")) {
+    var canvas = document.querySelector("#eclipse-scene");
+    var width = document.querySelector(".main-header").offsetWidth,
+        height = document.querySelector(".main-header").offsetHeight;
 
     var renderer = new THREE.WebGLRenderer({
         canvas: canvas,
-        antialias: true
+        antialias: true,
     });
     renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
     renderer.setSize(width, height);
@@ -29,36 +29,40 @@ if (document.querySelector('#eclipse-scene')) {
     var sphere = new THREE.Group();
     scene.add(sphere);
     var mat1 = new THREE.LineBasicMaterial({
-        color: '#343f87'
+        color: "#343f87",
     });
     var mat2 = new THREE.LineBasicMaterial({
-        color: 0x4a4a4a
+        color: 0x4a4a4a,
     });
 
-    if(document.querySelector('.light-style')) {
-        renderer.setClearColor('#ffffff');
+    if (document.querySelector(".light-style")) {
+        renderer.setClearColor("#ffffff");
         mat1 = new THREE.LineBasicMaterial({
-            color: '#343f87'
+            color: "#343f87",
         });
         mat2 = new THREE.LineBasicMaterial({
-            color: '#64cde9'
+            color: "#64cde9",
         });
     } else {
-        renderer.setClearColor('#151935');
+        renderer.setClearColor("#151935");
     }
-
 
     var radius = 100;
     var lines = 50;
     var dots = 50;
     for (var i = 0; i < lines; i++) {
         var geometry = new THREE.Geometry();
-        var line = new THREE.Line(this.geometry, (Math.random() > 0.2) ? mat1 : mat2);
+        var line = new THREE.Line(
+            this.geometry,
+            Math.random() > 0.2 ? mat1 : mat2
+        );
         line.speed = Math.random() * 300 + 250;
         line.wave = Math.random();
-        line.radius = Math.floor(radius + (Math.random() - 0.5) * (radius * 0.2));
+        line.radius = Math.floor(
+            radius + (Math.random() - 0.5) * (radius * 0.2)
+        );
         for (var j = 0; j < dots; j++) {
-            var x = ((j / dots) * line.radius * 2) - line.radius;
+            var x = (j / dots) * line.radius * 2 - line.radius;
             var vector = new THREE.Vector3(x, 0, 0);
             geometry.vertices.push(vector);
         }
@@ -74,7 +78,8 @@ if (document.querySelector('#eclipse-scene')) {
             line = sphere.children[i];
             for (j = 0; j < dots; j++) {
                 vector = sphere.children[i].geometry.vertices[j];
-                var ratio = 1 - ((line.radius - Math.abs(vector.x)) / line.radius);
+                var ratio =
+                    1 - (line.radius - Math.abs(vector.x)) / line.radius;
                 y = Math.sin(a / line.speed + j * 0.15) * 12 * ratio;
                 vector.y = y;
             }
@@ -82,56 +87,56 @@ if (document.querySelector('#eclipse-scene')) {
         }
     }
 
-
     function render(a) {
         requestAnimationFrame(render);
         updateDots(a);
-        sphere.rotation.y = (a * 0.0001);
-        sphere.rotation.x = (-a * 0.0001);
+        sphere.rotation.y = a * 0.0001;
+        sphere.rotation.x = -a * 0.0001;
         renderer.render(scene, camera);
     }
 
     function onResize() {
-        canvas.style.width = '';
-        canvas.style.height = '';
-        width = document.querySelector('.main-header').offsetWidth;
-        height = document.querySelector('.main-header').offsetHeight;
+        canvas.style.width = "";
+        canvas.style.height = "";
+        width = document.querySelector(".main-header").offsetWidth;
+        height = document.querySelector(".main-header").offsetHeight;
         camera.aspect = width / height;
         camera.updateProjectionMatrix();
         renderer.setSize(width, height);
     }
-
 
     requestAnimationFrame(render);
     window.addEventListener("resize", function () {
         onResize();
     });
 }
-if (document.querySelector('#eclipse-scene2')) {
+if (document.querySelector("#eclipse-scene2")) {
     (function eclipseScene2() {
-        var canvas = document.querySelector('#eclipse-scene2');
+        var canvas = document.querySelector("#eclipse-scene2");
         var width = canvas.offsetWidth,
             height = canvas.offsetHeight;
 
         var colors = [
-            new THREE.Color('#262d60'),
-            new THREE.Color('#245de9'),
-            new THREE.Color('#060e23')];
+            new THREE.Color("#262d60"),
+            new THREE.Color("#245de9"),
+            new THREE.Color("#060e23"),
+        ];
 
         var renderer = new THREE.WebGLRenderer({
             canvas: canvas,
-            antialias: true
+            antialias: true,
         });
         renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
         renderer.setSize(width, height);
-        if(document.querySelector('.light-style')) {
-            renderer.setClearColor('#ffffff');
+        if (document.querySelector(".light-style")) {
+            renderer.setClearColor("#ffffff");
             colors = [
-                new THREE.Color('#bff3ff'),
-                new THREE.Color('#245de9'),
-                new THREE.Color('#64cde9')];
+                new THREE.Color("#bff3ff"),
+                new THREE.Color("#245de9"),
+                new THREE.Color("#64cde9"),
+            ];
         } else {
-            renderer.setClearColor('#151935');
+            renderer.setClearColor("#151935");
         }
 
         var scene = new THREE.Scene();
@@ -139,14 +144,13 @@ if (document.querySelector('#eclipse-scene2')) {
         var raycaster = new THREE.Raycaster();
         raycaster.params.Points.threshold = 6;
 
-
         var camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 2000);
         camera.position.set(0, 0, 350);
 
         var galaxy = new THREE.Group();
         scene.add(galaxy);
 
-// Create dots
+        // Create dots
         var loader = new THREE.TextureLoader();
         loader.crossOrigin = "";
         var dotTexture = loader.load("images/svg/dotTexture.png");
@@ -162,9 +166,7 @@ if (document.querySelector('#eclipse-scene2')) {
             vector.color = Math.floor(Math.random() * colors.length);
             vector.theta = Math.random() * Math.PI * 2;
             vector.phi =
-                (1 - Math.sqrt(Math.random())) *
-                Math.PI /
-                2 *
+                (((1 - Math.sqrt(Math.random())) * Math.PI) / 2) *
                 (Math.random() > 0.5 ? 1 : -1);
 
             vector.x = Math.cos(vector.theta) * Math.cos(vector.phi);
@@ -197,42 +199,47 @@ if (document.querySelector('#eclipse-scene2')) {
                     attributePositions.array[index * 3] = vector.x;
                     attributePositions.array[index * 3 + 1] = vector.y;
                     attributePositions.array[index * 3 + 2] = vector.z;
-                }
+                },
             });
         }
 
         var bufferWrapGeom = new THREE.BufferGeometry();
         var attributePositions = new THREE.BufferAttribute(positions, 3);
-        bufferWrapGeom.addAttribute('position', attributePositions);
+        bufferWrapGeom.addAttribute("position", attributePositions);
         var attributeSizes = new THREE.BufferAttribute(sizes, 1);
-        bufferWrapGeom.addAttribute('size', attributeSizes);
+        bufferWrapGeom.addAttribute("size", attributeSizes);
         var attributeColors = new THREE.BufferAttribute(colorsAttribute, 3);
-        bufferWrapGeom.addAttribute('color', attributeColors);
+        bufferWrapGeom.addAttribute("color", attributeColors);
         var shaderMaterial = new THREE.ShaderMaterial({
             uniforms: {
                 texture: {
-                    value: dotTexture
-                }
+                    value: dotTexture,
+                },
             },
-            vertexShader: document.getElementById("wrapVertexShader").textContent,
-            fragmentShader: document.getElementById("wrapFragmentShader").textContent,
-            transparent: true
+            vertexShader: document.getElementById("wrapVertexShader")
+                .textContent,
+            fragmentShader: document.getElementById("wrapFragmentShader")
+                .textContent,
+            transparent: true,
         });
         var wrap = new THREE.Points(bufferWrapGeom, shaderMaterial);
         scene.add(wrap);
 
-// Create white segments
+        // Create white segments
         var segmentsGeom = new THREE.Geometry();
         var segmentsMat = new THREE.LineBasicMaterial({
             color: 0xffffff,
             transparent: true,
             opacity: 0.3,
-            vertexColors: THREE.VertexColors
+            vertexColors: THREE.VertexColors,
         });
         for (i = dotsGeometry.vertices.length - 1; i >= 0; i--) {
             vector = dotsGeometry.vertices[i];
             for (var j = dotsGeometry.vertices.length - 1; j >= 0; j--) {
-                if (i !== j && vector.distanceTo(dotsGeometry.vertices[j]) < 12) {
+                if (
+                    i !== j &&
+                    vector.distanceTo(dotsGeometry.vertices[j]) < 12
+                ) {
                     segmentsGeom.vertices.push(vector);
                     segmentsGeom.vertices.push(dotsGeometry.vertices[j]);
                     segmentsGeom.colors.push(colors[vector.color]);
@@ -276,28 +283,38 @@ if (document.querySelector('#eclipse-scene2')) {
 
         function onDotHover(index) {
             dotsGeometry.vertices[index].tl = new TimelineMax();
-            dotsGeometry.vertices[index].tl.to(dotsGeometry.vertices[index], 1, {
-                scaleX: 10,
-                ease: Elastic.easeOut.config(2, 0.2),
-                onUpdate: function () {
-                    attributeSizes.array[index] = dotsGeometry.vertices[index].scaleX;
+            dotsGeometry.vertices[index].tl.to(
+                dotsGeometry.vertices[index],
+                1,
+                {
+                    scaleX: 10,
+                    ease: Elastic.easeOut.config(2, 0.2),
+                    onUpdate: function () {
+                        attributeSizes.array[index] =
+                            dotsGeometry.vertices[index].scaleX;
+                    },
                 }
-            });
+            );
         }
 
         function mouseOut(index) {
-            dotsGeometry.vertices[index].tl.to(dotsGeometry.vertices[index], 0.4, {
-                scaleX: 5,
-                ease: Power2.easeOut,
-                onUpdate: function () {
-                    attributeSizes.array[index] = dotsGeometry.vertices[index].scaleX;
+            dotsGeometry.vertices[index].tl.to(
+                dotsGeometry.vertices[index],
+                0.4,
+                {
+                    scaleX: 5,
+                    ease: Power2.easeOut,
+                    onUpdate: function () {
+                        attributeSizes.array[index] =
+                            dotsGeometry.vertices[index].scaleX;
+                    },
                 }
-            });
+            );
         }
 
         function onResize() {
-            canvas.style.width = '';
-            canvas.style.height = '';
+            canvas.style.width = "";
+            canvas.style.height = "";
             width = canvas.offsetWidth;
             height = canvas.offsetHeight;
             camera.aspect = width / height;
@@ -320,5 +337,5 @@ if (document.querySelector('#eclipse-scene2')) {
             resizeTm = clearTimeout(resizeTm);
             resizeTm = setTimeout(onResize, 200);
         });
-    })()
+    })();
 }
