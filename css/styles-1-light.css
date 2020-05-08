@@ -2,7 +2,6 @@
 * Eclipse Ico - Eclipse Ico Template
 * Build Date: September 2018
 * Author: perleTheme Template
-* This is a premium product available exclusively here : https://themeforest.net/user/perletheme
 */
 /*
   TABLE OF CONTENTS
@@ -582,7 +581,7 @@ button:focus,
 /* ------------------------------------- */
 .main-header {
   margin-top: 75px;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 55px);
   max-height: 750px;
   min-height: 550px;
   /* padding-bottom: 4rem; */
@@ -1848,13 +1847,13 @@ button:focus,
   }
 
   .main-header {
-    height: 550px;
+    /* height: 550px; */
     min-height: inherit;
     margin-top: 57px;
   }
   .main-header .header-left-side {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
   .main-header .header-left-side h3 {
     padding-right: 0;
@@ -2111,7 +2110,7 @@ button:focus,
     padding: 30px 0 10px 10px;
   }
   .vdo {
-    height: 110%;
+    height: 128%;
     width: 90%;
   }
   .main-header {
@@ -2119,7 +2118,8 @@ button:focus,
   }
   .main-header .header-right-side {
     background: url(./../images/bg-original.png) center/cover no-repeat;
-    height: 121px;
+    /* height: 121px; */
+    height: 48%;
     right: 0;
     top: 0;
   }
